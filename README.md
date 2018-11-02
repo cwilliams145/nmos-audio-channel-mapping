@@ -1,22 +1,65 @@
-# [Work In Progress] AMWA NMOS Audio Channel Mapping Specification
+# AMWA NMOS Audio Channel Mapping Specification
 
-This repository will be used to develop an AMWA NMOS Specification to set channel mapping/selecting/shuffling settings for use with NMOS APIs.
+## GitHub Pages documentation
 
-## Getting started
+If you are reading this you are on the gh-pages branch, which is used to generate the documentation from the master and other branches, and from releases.  These are served at <https://amwa-tv.github.io/nmos-audio-channel-mapping/>.
 
-Readers are advised to be familiar with:
-*   The JT-NM Reference Architecture <http://jt-nm.org/>
-*   The [overview of Networked Media Open Specifications](https://github.com/AMWA-TV/nmos)
-*   The [NMOS Discovery and Registration Specification](https://github.com/AMWA-TV/nmos-discovery-registration) (IS-04)
-*   The [NMOS Connection Management Specification](https://github.com/AMWA-TV/nmos-device-connection-management) (IS-05)
+## Generating the documentation
 
-Readers should then read the [documentation](docs/) in this repository, and the [APIs](APIs/), which are written in RAML -- if a suitable tool is not available for reading this, then [this](APIs/generateHTML) will create HTML versions.
+If you make any changes to the repo please do the following:
 
-## Contents
+Clone this repo (if you haven't already), checkout the gh-pages branch:
 
-*   README.md -- This file
-*   [docs/](docs/) -- Normative documentation targeting those implementing APIs and clients.
-*   [APIs/](APIs/) -- Normative API descriptions
-*   [examples/](examples/) -- Example JSON requests and responses for APIs
-*   [LICENSE](LICENSE) -- Licenses for software and text documents
-*   [NOTICE](NOTICE) -- Disclaimer
+``git checkout gh-pages``
+
+Install build tools (raml2html, jsonlint, now installed locally):
+
+``make build-tools``
+
+Make the documentation:
+
+``make``
+
+This runs scripts to:
+
+- clone the repo from AMWA's GitHub
+- for each branch and release (with some exceptions) extract documentation, APIs and schemas
+  - making HTML renders of the RAML APIs
+- for each branch and release create indexes for the documentation, APIs and schemas
+- make links to what will later be the HTML renders of the Markdown documentation
+
+## Updating AMWA's GitHub
+
+You can push the updated documentation to AMWA's GitHub with.
+
+``make push``
+
+Alternatively commit and push manually for more control of the commit message.
+
+Admins must be to do this after merging PRs etc (until this is automated with CircleCI at some point).
+
+This then triggers a build of the GitHub Pages. This happens on GitHub's servers, using Jekyll to render the HTML.  This includes rendering the Markdown content, but we have to do the RAML ourselves.  
+
+To clean up:
+
+``make clean``
+
+To also remove the build tools:
+
+``make distclean``
+
+## Serving pages locally
+
+See also <https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll>
+
+Install Bundler and Jekyll - af you have Ruby installed then:
+
+``gem install bundler``
+
+``bundle install``
+
+Run server with:
+
+``make server``
+
+And browse to <http://127.0.0.1:4000>.
