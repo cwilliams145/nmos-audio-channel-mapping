@@ -3,15 +3,15 @@
   "type": "array",
   "description": "List of channels in an output",
   "title": "Output channel resource",
+  "minItems": 1,
   "items": {
     "type": "object",
     "required": [
-      "name"
+      "label"
     ],
     "properties": {
-      "name": {
-        "type": "string",
-        "pattern": "[a-z A-Z 0-9]+$"
+      "label": {
+        "type": "string"
       }
     }
   }

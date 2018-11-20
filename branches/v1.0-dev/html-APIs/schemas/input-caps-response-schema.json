@@ -4,15 +4,17 @@
   "description": "Describes an input's capabilities",
   "title": "Input parameter capability resource",
   "additionalProperties": false,
+  "required":[
+    "reordering",
+    "block_size"
+  ],
   "properties":{
-    "minChannels":{
-      "type": "integer"
+    "reordering":{
+      "type": "boolean"
     },
-    "maxChannels":{
-      "type": "integer"
-    },
-    "offsetStep":{
-      "type": "integer"
+    "block_size":{
+      "type": "integer",
+      "min": 1
     }
   }
 }

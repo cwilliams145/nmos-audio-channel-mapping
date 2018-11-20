@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html><head><title>Mapping API documentation</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="https://github.com/raml2html/raml2html 7.2.0"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">
+<!DOCTYPE HTML><html><head><title>AMWA NMOS Audio Channel Mapping API documentation</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="https://github.com/raml2html/raml2html 7.2.0"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">
       $(document).ready(function() {
         $('.page-header pre code, .top-resource-description pre code, .modal-body pre code').each(function(i, block) {
           hljs.highlightBlock(block);
@@ -166,12 +166,12 @@
       .resource-modal li > ul {
         margin-bottom: 1em;
       }
-    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>Mapping API documentation <small>version v1.0</small></h1><p>http://example.api.com/x-nmos/channelmapping/{version}</p><ul><li><strong>version</strong>: <em>required (v1.0)</em></li></ul><h3 id="overview"><a href="#overview">Overview</a></h3><p>Audo channel mapping blurb</p></div><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Base</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_"><span class="parent"></span>/</a> <span class="methods"><a href="#_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>AMWA NMOS Audio Channel Mapping API documentation <small>version v1.0</small></h1><p>http://example.api.com/x-nmos/channelmapping/{version}</p><ul><li><strong>version</strong>: <em>required (v1.0)</em></li></ul><h3 id="overview"><a href="#overview">Overview</a></h3><p>The Audio Channel Mapping API is exposed by NMOS Devices as a standard control interface for management of audio matrix mapping inside Devices.</p><h3 id="further_documentation"><a href="#further_documentation">Further Documentation</a></h3><p>Further normative documentation covering the behaviour of this API is contained in the <a href="../docs">docs</a> folder of this repository.</p></div><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Base</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_"><span class="parent"></span>/</a> <span class="methods"><a href="#_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
     "inputs/",
     "outputs/",
     "map/",
     "io/"
-]</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="io" class="panel-title">Input/Output information</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_io"><span class="parent"></span>/io</a> <span class="methods"><a href="#io_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_io" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#io_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="io_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/io</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#io_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="io_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+]</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="io" class="panel-title">Input/Output view</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_io"><span class="parent"></span>/io</a> <span class="methods"><a href="#io_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_io" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#io_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="io_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/io</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#io_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="io_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "IO Information view for entire API",
   "type": "object",
@@ -187,24 +187,15 @@
         "^[0-9]+:[0-9]+$":{
           "type": "object",
           "additionalProperties": false,
-          "required":[
-            "receiver_id",
-            "channels"
-          ],
           "properties": {
-            "receiver_id":{
-              "type": [
-                "string",
-                "null"
-              ],
-              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            "parent":{
+              "$ref": "input-parent-response-schema.json"
             },
             "channels":{
-              "type": "array",
-              "items": {
-                "type": "string",
-                "pattern": "^[0-9]+:[0-9]+$"
-              }
+              "$ref": "input-channels-response-schema.json"
+            },
+            "caps":{
+              "$ref": "input-caps-response-schema.json"
             }
           }
         }
@@ -216,81 +207,96 @@
         "^[0-9]+:[0-9]+$":{
           "type": "object",
           "additionalProperties": false,
-          "required":[
-            "source_id",
-            "channels",
-            "routableInputs"
-          ],
           "properties": {
             "source_id":{
-              "type": [
-                "string",
-                "null"
-              ],
-              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              "$ref": "output-sourceID-response-schema.json"
             },
             "channels":{
-              "type": "array",
-              "items": {
-                "type": "string",
-                "pattern": "^[0-9]+:[0-9]+$"
-              }
+              "$ref": "output-channels-response-schema.json"
             },
-            "routableInputs":{
-              "type": "string",
-              "pattern": "^[0-9]+:[0-9]+$"
+            "routable_inputs":{
+              "$ref": "output-caps-response-schema.json"
             }
           }
         }
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "inputs":{
     "input1":{
-      "receiver_id": "f6b34356-9885-4db8-bdeb-3141e23f443c",
+      "parent": {
+        "id": "f6b34356-9885-4db8-bdeb-3141e23f443c",
+        "type": "source"
+      },
       "channels":[
-        "channel1",
-        "channel2",
-        "channel3",
-        "channel4"
-      ]
+        {"label": "outA"},
+        {"label": "outB"},
+        {"label": "outC"},
+        {"label": "outD"}
+      ],
+      "caps": {
+        "reordering": false,
+        "block_size": 2
+      }
     },
     "input2":{
-      "receiver_id": "3286c499-3e78-4125-b0e2-d465354d11e6",
+      "parent": {
+        "id": "3286c499-3e78-4125-b0e2-d465354d11e6",
+        "type": "receiver"
+      },
       "channels":[
-        "FL",
-        "FR",
-        "LS",
-        "RS",
-        "C",
-        "S"
-      ]
+        {"label": "FL"},
+        {"label": "FR"},
+        {"label": "LS"},
+        {"label": "RS"},
+        {"label": "C"},
+        {"label": "S"}
+      ],
+      "caps": {
+        "reordering": true,
+        "block_size": 1
+      }
     },
     "input3":{
-      "receiver_id": "61858ca4-5c9a-43ea-a9c8-aa6eef997b43",
+      "parent": {
+        "id": null,
+        "type": null
+      },
       "channels":[
-        "L",
-        "R"
-      ]
+        {"label": "L"},
+        {"label": "R"}
+      ],
+      "caps": {
+        "reordering": true,
+        "block_size": 1
+      }
     },
     "input4":{
-      "receiver_id": null,
+      "parent":{
+        "id": "6dea8109-9e27-49e7-81eb-65a74e964414",
+        "type": "source"
+      },
       "channels":[
-        "a",
-        "b",
-        "c"
-      ]
+        {"label": "a"},
+        {"label": "b"},
+        {"label": "c"}
+      ],
+      "caps": {
+        "reordering": false,
+        "block_size": 1
+      }
     }
   },
   "outputs":{
     "output1":{
-      "source_id": "beebfc73-6f43-497a-a9c3-c822ea34a4c9",
+      "source_id": "bdebfc73-6f43-497a-a9c3-c822ea34a4c9",
       "channels":[
-        "out1",
-        "out2"
+        {"label": "outA"},
+        {"label": "outB"}
       ],
-      "routableInputs":[
+      "routable_inputs":[
         "input1",
         "input2",
         "input4"
@@ -299,10 +305,10 @@
     "output2":{
       "source_id": "491de650-c47e-4b70-9597-72ebbf23372a",
       "channels":[
-        "L",
-        "R"
+        {"label": "L"},
+        {"label": "R"}
       ],
-      "routableInputs":[
+      "routable_inputs":[
         "input3"
       ]
     }
@@ -310,7 +316,8 @@
 }</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="map" class="panel-title">Map entity root</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map"><span class="parent"></span>/map</a> <span class="methods"><a href="#map_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/map</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   "staged/",
   "active/"
-]</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_staged"><span class="parent">/map</span>/staged</a> <span class="methods"><a href="#map_staged_get"><span class="badge badge_get">get</span></a> <a href="#map_staged_options"><span class="badge badge_options">options</span></a> <a href="#map_staged_patch"><span class="badge badge_patch">patch</span></a></span></h4></div><div id="panel_map_staged" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_staged_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_staged_options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_staged_patch'" class="list-group-item"><span class="badge badge_patch">patch</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+]
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_staged"><span class="parent">/map</span>/staged</a> <span class="methods"><a href="#map_staged_get"><span class="badge badge_get">get</span></a> <a href="#map_staged_patch"><span class="badge badge_patch">patch</span></a> <a href="#map_staged_options"><span class="badge badge_options">options</span></a></span></h4></div><div id="panel_map_staged" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_staged_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_staged_patch'" class="list-group-item"><span class="badge badge_patch">patch</span><div class="method_description"></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_staged_options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the map table object",
@@ -329,11 +336,11 @@
         "^[a-z A-Z 0-9]+$": {
           "description": "Names of outputs",
           "patternProperties":{
-            "^[a-z A-Z 0-9]+$":{
-              "description": "Names of channels",
+            "^(0|([1-9][0-9]*))$":{
+              "description": "Index of channels",
               "required":[
                 "input",
-                "channel"
+                "channel_index"
               ],
               "properties": {
                 "input":{
@@ -343,10 +350,10 @@
                     "null"
                   ]
                 },
-                "channel":{
-                  "description": "Name of channel to be connected.",
+                "channel_index":{
+                  "description": "Index of channel to be connected.",
                   "type": [
-                    "string",
+                    "integer",
                     "null"
                   ]
                 }
@@ -357,7 +364,8 @@
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation": {
     "mode": null,
     "requested_time": null,
@@ -365,51 +373,52 @@
   },
   "map":{
     "outA":{
-      "channel0":{
+      "0":{
         "input": "input1",
-        "channel": "channel1"
+        "channel_index": 1
       },
-      "channel1":{
+      "1":{
         "input": "input1",
-        "channel": "channel2"
+        "channel_index": 2
       },
-      "channel2":{
+      "2":{
         "input": "input1",
-        "channel": "channel3"
+        "channel_index": 3
       },
-      "channel3":{
+      "3":{
         "input": "input1",
-        "channel": "channel4"
+        "channel_index": 4
       },
-      "channel4":{
+      "4":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel5":{
+      "5":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel6":{
+      "6":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel7":{
+      "7":{
         "input": null,
-        "channel": null
+        "channel_index": null
       }
     },
     "outB":{
-      "channel0":{
+      "0":{
         "input": "input4",
-        "channel": "leftChannel"
+        "channel_index": 0
       },
-      "channel1":{
+      "1":{
         "input": "input4",
-        "channel": "rightChannel"
+        "channel_index": 1
       }
     }
   }
-}</code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_patch"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_patch">patch</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_patch_request" data-toggle="tab">Request</a></li><li><a href="#map_staged_patch_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_patch_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_patch"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_patch">patch</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_patch_request" data-toggle="tab">Request</a></li><li><a href="#map_staged_patch_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_patch_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the map table object",
@@ -424,11 +433,11 @@
         "^[a-z A-Z 0-9]+$": {
           "description": "Names of outputs",
           "patternProperties":{
-            "^[a-z A-Z 0-9]+$":{
-              "description": "Names of channels",
+            "^(0|([1-9][0-9]*))$" :{
+              "description": "Index of channels",
               "required":[
                 "input",
-                "channel"
+                "channel_index"
               ],
               "properties": {
                 "input":{
@@ -438,10 +447,10 @@
                     "null"
                   ]
                 },
-                "channel":{
-                  "description": "Name of channel to be connected.",
+                "channel_index":{
+                  "description": "Index of channel to be connected.",
                   "type": [
-                    "string",
+                    "integer",
                     "null"
                   ]
                 }
@@ -452,28 +461,30 @@
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
     "activation": {
     "mode": "activate_scheduled_absolute",
     "requested_time": "1496759200:0"
   },
   "map": {
     "outA":{
-      "channel0":{
+      "0":{
         "input": "input1",
-        "channel": "channel1"
+        "channel_index": 0
       },
-      "channel1":{
+      "1":{
         "input": "input1",
-        "channel": "channel2"
+        "channel_index": 1
       },
-      "channel2":{
+      "2":{
         "input": "input1",
-        "channel": "channel3"
+        "channel_index": 2
       }
     }
   }
-}</code></pre></div></div><div class="tab-pane" id="map_staged_patch_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre></div></div><div class="tab-pane" id="map_staged_patch_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the map table object",
@@ -492,11 +503,11 @@
         "^[a-z A-Z 0-9]+$": {
           "description": "Names of outputs",
           "patternProperties":{
-            "^[a-z A-Z 0-9]+$":{
-              "description": "Names of channels",
+            "^(0|([1-9][0-9]*))$":{
+              "description": "Index of channels",
               "required":[
                 "input",
-                "channel"
+                "channel_index"
               ],
               "properties": {
                 "input":{
@@ -506,10 +517,10 @@
                     "null"
                   ]
                 },
-                "channel":{
-                  "description": "Name of channel to be connected.",
+                "channel_index":{
+                  "description": "Index of channel to be connected.",
                   "type": [
-                    "string",
+                    "integer",
                     "null"
                   ]
                 }
@@ -520,7 +531,8 @@
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation": {
     "mode": null,
     "requested_time": null,
@@ -528,51 +540,52 @@
   },
   "map":{
     "outA":{
-      "channel0":{
+     "0" :{
         "input": "input1",
-        "channel": "channel1"
+        "channel_index": 0
       },
-      "channel1":{
+      "1":{
         "input": "input1",
-        "channel": "channel2"
+        "channel_index": 1
       },
-      "channel2":{
+      "2":{
         "input": "input1",
-        "channel": "channel3"
+        "channel_index": 2
       },
-      "channel3":{
+      "3":{
         "input": "input1",
-        "channel": "channel4"
+        "channel_index": 3
       },
-      "channel4":{
+      "4":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel5":{
+      "5":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel6":{
+      "6":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel7":{
+      "7":{
         "input": null,
-        "channel": null
+        "channel_index": null
       }
     },
     "outB":{
-      "channel0":{
+      "0":{
         "input": "input4",
-        "channel": "leftChannel"
+        "channel_index": 0
       },
-      "channel1":{
+      "1":{
         "input": "input4",
-        "channel": "rightChannel"
+        "channel_index": 1
       }
     }
   }
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
@@ -603,7 +616,8 @@
   "code": 400,
   "error": "Could not match the request to the schema",
   "debug": null
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
@@ -634,7 +648,8 @@
   "code": 500,
   "error": "Not enough DSP resource available to service request",
   "debug": null
-}</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_active"><span class="parent">/map</span>/active</a> <span class="methods"><a href="#map_active_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map_active" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_active_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_active_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/active</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_active_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_active_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_staged_options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/map</span>/staged</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_staged_options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_staged_options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_active"><span class="parent">/map</span>/active</a> <span class="methods"><a href="#map_active_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map_active" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_active_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_active_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/active</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_active_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_active_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes the map table object",
@@ -653,11 +668,11 @@
         "^[a-z A-Z 0-9]+$": {
           "description": "Names of outputs",
           "patternProperties":{
-            "^[a-z A-Z 0-9]+$":{
-              "description": "Names of channels",
+            "^(0|([1-9][0-9]*))$":{
+              "description": "Index of channels",
               "required":[
                 "input",
-                "channel"
+                "channel_index"
               ],
               "properties": {
                 "input":{
@@ -667,10 +682,10 @@
                     "null"
                   ]
                 },
-                "channel":{
-                  "description": "Name of channel to be connected.",
+                "channel_index":{
+                  "description": "Index of channel to be connected.",
                   "type": [
-                    "string",
+                    "integer",
                     "null"
                   ]
                 }
@@ -681,7 +696,8 @@
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation": {
     "mode": null,
     "requested_time": null,
@@ -689,391 +705,189 @@
   },
   "map":{
     "outA":{
-      "channel0":{
+      "0":{
         "input": "input1",
-        "channel": "channel1"
+        "channel_index": 1
       },
-      "channel1":{
+      "1":{
         "input": "input1",
-        "channel": "channel2"
+        "channel_index": 2
       },
-      "channel2":{
+      "2":{
         "input": "input1",
-        "channel": "channel3"
+        "channel_index": 3
       },
-      "channel3":{
+      "3":{
         "input": "input1",
-        "channel": "channel4"
+        "channel_index": 4
       },
-      "channel4":{
+      "4":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel5":{
+      "5":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel6":{
+      "6":{
         "input": null,
-        "channel": null
+        "channel_index": null
       },
-      "channel7":{
+      "7":{
         "input": null,
-        "channel": null
+        "channel_index": null
       }
     },
     "outB":{
-      "channel0":{
+      "0":{
         "input": "input4",
-        "channel": "leftChannel"
+        "channel_index": 0
       },
-      "channel1":{
+      "1":{
         "input": "input4",
-        "channel": "rightChannel"
+        "channel_index": 1
       }
     }
   }
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="inputs" class="panel-title">Inputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs"><span class="parent"></span>/inputs</a> <span class="methods"><a href="#inputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all inputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/inputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all inputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="inputs" class="panel-title">Inputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs"><span class="parent"></span>/inputs</a> <span class="methods"><a href="#inputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all inputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/inputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all inputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   "input1/",
   "input2/",
   "input3/",
   "input4/"
-]</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname_"><span class="parent">/inputs</span>/{inputName}</a> <span class="methods"><a href="#inputs__inputname__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs</span>/{inputName}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+]
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname_"><span class="parent">/inputs</span>/{inputName}</a> <span class="methods"><a href="#inputs__inputname__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs</span>/{inputName}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   "params/",
   "caps/",
-  "receiverID/",
+  "parent/",
   "channels/"
-]</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when an the input name does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__params"><span class="parent">/inputs/{inputName}</span>/params</a> <span class="methods"><a href="#inputs__inputname__params_get"><span class="badge badge_get">get</span></a> <a href="#inputs__inputname__params_options"><span class="badge badge_options">options</span></a> <a href="#inputs__inputname__params_patch"><span class="badge badge_patch">patch</span></a></span></h4></div><div id="panel_inputs__inputname__params" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__params_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div><div onclick="window.location.href = '#inputs__inputname__params_options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#inputs__inputname__params_patch'" class="list-group-item"><span class="badge badge_patch">patch</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__params_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/params</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__params_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__params_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__params_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__params_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an input&#39;s parameters",
-  "title": "Input parameter resource",
-  "additionalProperties": false,
-  "required":[
-    "offset",
-    "numChannels"
-  ],
-  "properties":{
-    "offset":{
-      "type": "integer"
-    },
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "offset": 0,
-  "numChannels": 2
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__params_options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/inputs/{inputName}</span>/params</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__params_options_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__params_options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__params_options_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__params_options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__params_patch"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_patch">patch</span> <span class="parent">/inputs/{inputName}</span>/params</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__params_patch_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__params_patch_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__params_patch_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an input&#39;s parameters",
-  "title": "Input parameter resource",
-  "additionalProperties": false,
-  "properties":{
-    "offset":{
-      "type": "integer"
-    },
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "numChannels": 2
-}</code></pre></div></div><div class="tab-pane" id="inputs__inputname__params_patch_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an input&#39;s parameters",
-  "title": "Input parameter resource",
-  "additionalProperties": false,
-  "required":[
-    "offset",
-    "numChannels"
-  ],
-  "properties":{
-    "offset":{
-      "type": "integer"
-    },
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "offset": 0,
-  "numChannels": 2
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
-  "title": "Error response",
-  "required": [
-    "code",
-    "error",
-    "debug"
-  ],
-  "properties": {
-    "code": {
-      "description": "HTTP error code",
-      "type": "integer",
-      "minimum": 400,
-      "maximum": 599
-    },
-    "error": {
-      "description": "Human readable message which is suitable for user interface display, and helpful to the user",
-      "type": "string"
-    },
-    "debug": {
-      "description": "Debug information which may assist a programmer working with the API",
-      "type": ["null", "string"]
-    }
-  }
-}
-</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "code": 400,
-  "error": "Could not match the request to the schema",
-  "debug": null
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
-  "title": "Error response",
-  "required": [
-    "code",
-    "error",
-    "debug"
-  ],
-  "properties": {
-    "code": {
-      "description": "HTTP error code",
-      "type": "integer",
-      "minimum": 400,
-      "maximum": 599
-    },
-    "error": {
-      "description": "Human readable message which is suitable for user interface display, and helpful to the user",
-      "type": "string"
-    },
-    "debug": {
-      "description": "Debug information which may assist a programmer working with the API",
-      "type": ["null", "string"]
-    }
-  }
-}
-</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "code": 500,
-  "error": "Not enough DSP resource available to service request",
-  "debug": null
-}</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__caps"><span class="parent">/inputs/{inputName}</span>/caps</a> <span class="methods"><a href="#inputs__inputname__caps_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__caps" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__caps_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__caps_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/caps</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__caps_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__caps_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__caps_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__caps_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+]
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when an the input name does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__caps"><span class="parent">/inputs/{inputName}</span>/caps</a> <span class="methods"><a href="#inputs__inputname__caps_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__caps" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__caps_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__caps_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/caps</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__caps_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__caps_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__caps_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__caps_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes an input&#39;s capabilities",
   "title": "Input parameter capability resource",
   "additionalProperties": false,
+  "required":[
+    "reordering",
+    "block_size"
+  ],
   "properties":{
-    "minChannels":{
-      "type": "integer"
+    "reordering":{
+      "type": "boolean"
     },
-    "maxChannels":{
-      "type": "integer"
-    },
-    "offsetStep":{
-      "type": "integer"
+    "block_size":{
+      "type": "integer",
+      "min": 1
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "minChannels": 0,
-  "maxChannels": 8,
-  "offsetStep": 4
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__receiverid"><span class="parent">/inputs/{inputName}</span>/receiverID</a> <span class="methods"><a href="#inputs__inputname__receiverid_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__receiverid" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__receiverid_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__receiverid_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/receiverID</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__receiverid_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__receiverid_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__receiverid_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__receiverid_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+  "reordering": true,
+  "block_size": 8
+}
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__parent"><span class="parent">/inputs/{inputName}</span>/parent</a> <span class="methods"><a href="#inputs__inputname__parent_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__parent" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__parent_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__parent_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/parent</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__parent_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__parent_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__parent_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__parent_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "string",
-  "description": "Gives an input&#39;s receiver ID",
-  "title": "Input receiver ID resource",  
-  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>"a978110b-e19a-45ce-93c3-67d41db27457"</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__channels"><span class="parent">/inputs/{inputName}</span>/channels</a> <span class="methods"><a href="#inputs__inputname__channels_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__channels" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__channels_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__channels_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/channels</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__channels_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__channels_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__channels_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__channels_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Gives details of where media connected to an Input came from",
+  "title": "Input Parent Resource",
+  "required":[
+    "id",
+    "type"
+  ],
+  "properties": {
+    "id":{
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "type":{
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum":[
+        "source",
+        "receiver",
+        null
+      ]
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+  "id": "91762591-9e46-48db-bd08-f8450248f02c",
+  "type": "source"
+}
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs__inputname__channels"><span class="parent">/inputs/{inputName}</span>/channels</a> <span class="methods"><a href="#inputs__inputname__channels_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs__inputname__channels" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs__inputname__channels_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs__inputname__channels_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/inputs/{inputName}</span>/channels</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#inputs__inputname__channels_get_request" data-toggle="tab">Request</a></li><li><a href="#inputs__inputname__channels_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs__inputname__channels_get_request"><h3>URI Parameters</h3><ul><li><strong>inputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="inputs__inputname__channels_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
   "description": "List of channels in an input",
   "title": "Input channel resource",
+  "minItems": 1,
   "items": {
     "type": "object",
     "required": [
-      "name"
+      "label"
     ],
     "properties": {
-      "name": {
-        "type": "string",
-        "pattern": "[a-z A-Z 0-9]+$"
+      "label": {
+        "type": "string"
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
-    "name": "channel0"
+    "label": "Left Channel"
   },
   {
-    "name": "channel1"
+    "label": "Right Channel"
   }
-]</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="outputs" class="panel-title">Outputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs"><span class="parent"></span>/outputs</a> <span class="methods"><a href="#outputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all outputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/outputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all outputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#outputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+]
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="outputs" class="panel-title">Outputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs"><span class="parent"></span>/outputs</a> <span class="methods"><a href="#outputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all outputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/outputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all outputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#outputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   "OutA/",
   "OutB/"
-]</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname_"><span class="parent">/outputs</span>/{outputName}</a> <span class="methods"><a href="#outputs__outputname__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs</span>/{outputName}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+]
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname_"><span class="parent">/outputs</span>/{outputName}</a> <span class="methods"><a href="#outputs__outputname__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs</span>/{outputName}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   "params/",
-  "caps/",
-  "sourceID/",
+  "sourceid/",
   "channels/"
-]</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__params"><span class="parent">/outputs/{outputName}</span>/params</a> <span class="methods"><a href="#outputs__outputname__params_get"><span class="badge badge_get">get</span></a> <a href="#outputs__outputname__params_options"><span class="badge badge_options">options</span></a> <a href="#outputs__outputname__params_patch"><span class="badge badge_patch">patch</span></a></span></h4></div><div id="panel_outputs__outputname__params" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__params_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div><div onclick="window.location.href = '#outputs__outputname__params_options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#outputs__outputname__params_patch'" class="list-group-item"><span class="badge badge_patch">patch</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__params_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/params</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__params_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__params_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__params_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__params_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an outputs&#39;s parameters",
-  "title": "Output parameter resource",
-  "additionalProperties": false,
-  "required":[
-    "numChannels"
-  ],
-  "properties":{
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "numChannels": 2
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__params_options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/outputs/{outputName}</span>/params</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__params_options_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__params_options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__params_options_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__params_options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__params_patch"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_patch">patch</span> <span class="parent">/outputs/{outputName}</span>/params</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__params_patch_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__params_patch_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__params_patch_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an outputs&#39;s parameters",
-  "title": "Output parameter resource",
-  "additionalProperties": false,
-  "properties":{
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "numChannels": 4
-}</code></pre></div></div><div class="tab-pane" id="outputs__outputname__params_patch_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an outputs&#39;s parameters",
-  "title": "Output parameter resource",
-  "additionalProperties": false,
-  "required":[
-    "numChannels"
-  ],
-  "properties":{
-    "numChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "numChannels": 2
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
-  "title": "Error response",
-  "required": [
-    "code",
-    "error",
-    "debug"
-  ],
-  "properties": {
-    "code": {
-      "description": "HTTP error code",
-      "type": "integer",
-      "minimum": 400,
-      "maximum": 599
-    },
-    "error": {
-      "description": "Human readable message which is suitable for user interface display, and helpful to the user",
-      "type": "string"
-    },
-    "debug": {
-      "description": "Debug information which may assist a programmer working with the API",
-      "type": ["null", "string"]
-    }
-  }
-}
-</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "code": 400,
-  "error": "Could not match the request to the schema",
-  "debug": null
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes the standard error response which is returned with HTTP codes 400 and above",
-  "title": "Error response",
-  "required": [
-    "code",
-    "error",
-    "debug"
-  ],
-  "properties": {
-    "code": {
-      "description": "HTTP error code",
-      "type": "integer",
-      "minimum": 400,
-      "maximum": 599
-    },
-    "error": {
-      "description": "Human readable message which is suitable for user interface display, and helpful to the user",
-      "type": "string"
-    },
-    "debug": {
-      "description": "Debug information which may assist a programmer working with the API",
-      "type": ["null", "string"]
-    }
-  }
-}
-</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "code": 400,
-  "error": "Could not match the request to the schema",
-  "debug": null
-}</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__caps"><span class="parent">/outputs/{outputName}</span>/caps</a> <span class="methods"><a href="#outputs__outputname__caps_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__caps" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__caps_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__caps_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/caps</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__caps_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__caps_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__caps_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__caps_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "description": "Describes an outputs&#39;s capabilities",
-  "title": "Output parameter capability resource",
-  "additionalProperties": false,
-  "properties":{
-    "minChannels":{
-      "type": "integer"
-    },
-    "maxChannels":{
-      "type": "integer"
-    }
-  }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "maxChannels": 8,
-  "minChannels": 8
-}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__sourceid"><span class="parent">/outputs/{outputName}</span>/sourceID</a> <span class="methods"><a href="#outputs__outputname__sourceid_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__sourceid" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__sourceid_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__sourceid_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/sourceID</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__sourceid_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__sourceid_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__sourceid_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__sourceid_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+]
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__sourceid"><span class="parent">/outputs/{outputName}</span>/sourceid</a> <span class="methods"><a href="#outputs__outputname__sourceid_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__sourceid" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__sourceid_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__sourceid_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/sourceid</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__sourceid_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__sourceid_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__sourceid_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__sourceid_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "string",
   "description": "Gives an output&#39;s source ID",
   "title": "Output source ID resource",  
   "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>"066cde2f-a525-417b-9177-20ae536265bc"</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__channels"><span class="parent">/outputs/{outputName}</span>/channels</a> <span class="methods"><a href="#outputs__outputname__channels_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__channels" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__channels_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__channels_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/channels</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__channels_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__channels_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__channels_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__channels_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>"066cde2f-a525-417b-9177-20ae536265bc"
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__channels"><span class="parent">/outputs/{outputName}</span>/channels</a> <span class="methods"><a href="#outputs__outputname__channels_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__channels" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__channels_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__channels_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/channels</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__channels_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__channels_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__channels_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__channels_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
   "description": "List of channels in an output",
   "title": "Output channel resource",
+  "minItems": 1,
   "items": {
     "type": "object",
     "required": [
-      "name"
+      "label"
     ],
     "properties": {
-      "name": {
-        "type": "string",
-        "pattern": "[a-z A-Z 0-9]+$"
+      "label": {
+        "type": "string"
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
-    "name": "channel0"
+    "label": "Left Channel"
   },
   {
-    "name": "channel1"
+    "label": "Right Channel"
   }
-]</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#">Base</a></li><li><a href="#io">Input/Output information</a></li><li><a href="#map">Map entity root</a></li><li><a href="#inputs">Inputs</a></li><li><a href="#outputs">Outputs</a></li></ul></div></div></div></div></body></html>
+]
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs__outputname__caps"><span class="parent">/outputs/{outputName}</span>/caps</a> <span class="methods"><a href="#outputs__outputname__caps_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs__outputname__caps" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs__outputname__caps_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs__outputname__caps_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/outputs/{outputName}</span>/caps</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#outputs__outputname__caps_get_request" data-toggle="tab">Request</a></li><li><a href="#outputs__outputname__caps_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs__outputname__caps_get_request"><h3>URI Parameters</h3><ul><li><strong>outputName</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="outputs__outputname__caps_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: Can not resolve output-caps-response-schema.json</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>Can not resolve ../examples/outputs/output-name-caps-get-200.json</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#">Base</a></li><li><a href="#io">Input/Output view</a></li><li><a href="#map">Map entity root</a></li><li><a href="#inputs">Inputs</a></li><li><a href="#outputs">Outputs</a></li></ul></div></div></div></div></body></html>
