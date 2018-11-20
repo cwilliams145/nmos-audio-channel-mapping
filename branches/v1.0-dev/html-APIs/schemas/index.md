@@ -11,5 +11,6 @@
 - [io-response-schema](io-response-schema.json)
 - [map-tables-request-schema](map-tables-request-schema.json)
 - [map-tables-response-schema](map-tables-response-schema.json)
+- [output-caps-response-schema](output-caps-response-schema.json)
 - [output-channels-response-schema](output-channels-response-schema.json)
 - [output-sourceID-response-schema](output-sourceID-response-schema.json)
