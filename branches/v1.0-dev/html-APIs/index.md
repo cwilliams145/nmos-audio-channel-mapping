@@ -2,4 +2,4 @@
 
 # APIs for v1.0-dev
 
-- [ChannelMappingAPI](html-APIs/ChannelMappingAPI.html)
+- [ChannelMappingAPI](ChannelMappingAPI.html)
