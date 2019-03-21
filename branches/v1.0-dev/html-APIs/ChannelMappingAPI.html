@@ -398,40 +398,13 @@ pre code {
           "$ref": "activation-response-schema.json"
         },
         "action:":{
-          "^[a-z A-Z 0-9 \\- _]+$": {
-            "description": "Names of outputs",
-            "patternProperties":{
-              "^(0|([1-9][0-9]*))$":{
-                "description": "Index of channels",
-                "required":[
-                  "input",
-                  "channel_index"
-                ],
-                "properties": {
-                  "input":{
-                    "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
-                    "pattern": "^[a-z A-Z 0-9 \\- _]+$",
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  },
-                  "channel_index":{
-                    "description": "Index of channel to be connected.",
-                    "type": [
-                      "integer",
-                      "null"
-                    ]
-                  }
-                }
-              }
-            }
-          }
+          "$ref": "map-tableentry-schema.json"
         }
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "1" :{
     "activation":{
       "mode": "activate_scheduled_absolute",
@@ -482,38 +455,11 @@ pre code {
       "$ref": "activation-schema.json"
     },
     "action:":{
-      "^[a-z A-Z 0-9 \\- _]+$": {
-        "description": "Names of outputs",
-        "patternProperties":{
-          "^(0|([1-9][0-9]*))$":{
-            "description": "Index of channels",
-            "required":[
-              "input",
-              "channel_index"
-            ],
-            "properties": {
-              "input":{
-                "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
-                "pattern": "^[a-z A-Z 0-9 \\- _]+$",
-                "type": [
-                  "string",
-                  "null"
-                ]
-              },
-              "channel_index":{
-                "description": "Index of channel to be connected.",
-                "type": [
-                  "integer",
-                  "null"
-                ]
-              }
-            }
-          }
-        }
-      }
+      "$ref": "map-tableentry-schema.json"
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation":{
     "mode": "activate_scheduled_absolute",
     "requested_time": "1544448739:0"
@@ -546,40 +492,13 @@ pre code {
           "$ref": "activation-response-schema.json"
         },
         "action:":{
-          "^[a-z A-Z 0-9 \\- _]+$": {
-            "description": "Names of outputs",
-            "patternProperties":{
-              "^(0|([1-9][0-9]*))$":{
-                "description": "Index of channels",
-                "required":[
-                  "input",
-                  "channel_index"
-                ],
-                "properties": {
-                  "input":{
-                    "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
-                    "pattern": "^[a-z A-Z 0-9 \\- _]+$",
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  },
-                  "channel_index":{
-                    "description": "Index of channel to be connected.",
-                    "type": [
-                      "integer",
-                      "null"
-                    ]
-                  }
-                }
-              }
-            }
-          }
+          "$ref": "map-tableentry-schema.json"
         }
       }
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "3": {
     "activation":{
       "mode": "activate_scheduled_absolute",
@@ -675,38 +594,11 @@ pre code {
       "$ref": "activation-response-schema.json"
     },
     "action:":{
-      "^[a-z A-Z 0-9 \\- _]+$": {
-        "description": "Names of outputs",
-        "patternProperties":{
-          "^(0|([1-9][0-9]*))$":{
-            "description": "Index of channels",
-            "required":[
-              "input",
-              "channel_index"
-            ],
-            "properties": {
-              "input":{
-                "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
-                "pattern": "^[a-z A-Z 0-9 \\- _]+$",
-                "type": [
-                  "string",
-                  "null"
-                ]
-              },
-              "channel_index":{
-                "description": "Index of channel to be connected.",
-                "type": [
-                  "integer",
-                  "null"
-                ]
-              }
-            }
-          }
-        }
-      }
+      "$ref": "map-tableentry-schema.json"
     }
   }
-}</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation":{
     "mode": "activate_scheduled_relative",
     "requested_time": "2:0",
@@ -771,36 +663,7 @@ pre code {
       "$ref": "activation-response-schema.json"
     },
     "map":{
-      "patternProperties": {
-        "^[a-zA-Z0-9\\-_]+$": {
-          "description": "Names of outputs",
-          "patternProperties":{
-            "^(0|([1-9][0-9]*))$":{
-              "description": "Index of channels",
-              "required":[
-                "input",
-                "channel_index"
-              ],
-              "properties": {
-                "input":{
-                  "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
-                  "type": [
-                    "string",
-                    "null"
-                  ]
-                },
-                "channel_index":{
-                  "description": "Index of channel to be connected.",
-                  "type": [
-                    "integer",
-                    "null"
-                  ]
-                }
-              }
-            }
-          }
-        }
-      }
+      "$ref": "map-tableentry-schema.json"
     }
   }
 }
@@ -857,7 +720,33 @@ pre code {
     }
   }
 }
-</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="inputs" class="panel-title">Inputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs"><span class="parent"></span>/inputs</a> <span class="methods"><a href="#inputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all inputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/inputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all inputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_active__outputid_"><span class="parent">/map/active</span>/{outputId}</a> <span class="methods"><a href="#map_active__outputid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map_active__outputid_" class="panel-collapse collapse"><div class="panel-body"><div class="resource-description"><p>This resource allows a controller to fetch only the section of the map related to the named output, without the need to fetch the entire map.</p></div><div class="list-group"><div onclick="window.location.href = '#map_active__outputid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_active__outputid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map/active</span>/{outputId}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#map_active__outputid__get_request" data-toggle="tab">Request</a></li><li><a href="#map_active__outputid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_active__outputid__get_request"><h3>URI Parameters</h3><ul><li><strong>outputId</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="map_active__outputid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes the map for one specific outputId",
+  "title": "Map table resource",
+  "properties": {
+    "activation": {
+      "$ref": "activation-response-schema.json"
+    },
+    "map":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+  "outB":{
+      "0":{
+        "input": "input4",
+        "channel_index": 0
+      },
+      "1":{
+        "input": "input4",
+        "channel_index": 1
+      }
+    }
+}
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="inputs" class="panel-title">Inputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs"><span class="parent"></span>/inputs</a> <span class="methods"><a href="#inputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all inputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/inputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all inputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
   "description": "List of inputs/outputs",
