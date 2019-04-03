@@ -15,29 +15,10 @@ The documenation and API links immediately below, and the links in the page head
 Once AMWA has approved a Specification, its documentation and API links will be for the _most recent approved release_ (which may be earlier than what is shown by the default branch on the GitHub repo).
 
 
-## Documentation for v1.0-dev
-
-- [Overview](branches/v1.0-dev/docs/1.0._Overview.md)
-- [APIs](branches/v1.0-dev/docs/2.0._APIs.md)
-  - [Client Side Implementation](branches/v1.0-dev/docs/2.1._APIs_-_Client_Side_Implementation.md)
-  - [Server Side Implementation](branches/v1.0-dev/docs/2.2._APIs_-_Server_Side_Implementation.md)
-- [Interoperability](branches/v1.0-dev/docs/3.0._Interoperability.md)
-  - [NMOS IS-04](branches/v1.0-dev/docs/3.1._Interoperability_-_NMOS_IS-04.md)
-- [Behaviour](branches/v1.0-dev/docs/4.0._Behaviour.md)
-- [Upgrade Path](branches/v1.0-dev/docs/5.0._Upgrade_Path.md)
-
-## APIs for v1.0-dev
-
-- [ChannelMappingAPI](branches/v1.0-dev/html-APIs/ChannelMappingAPI.html)
-
-### [JSON Schemas](branches/v1.0-dev/html-APIs/schemas/)
-
-
-### [Examples](branches/v1.0-dev/examples/)
-
-
 ## Branches
 
-[v1.0-dev](branches/v1.0-dev/)
+[v1.0.x](branches/v1.0.x/)
 
 ## Tags (Releases)
+
+[v1.0](tags/v1.0/)
