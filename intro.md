@@ -1,5 +1,3 @@
-# AMWA IS-08 NMOS Audio Channel Mapping Specification
-
 IS-08 is an AMWA NMOS Specification to set channel mapping/selecting/shuffling settings for use with NMOS APIs.
 
 It has been developed by the [Advanced Media Workflow Association](https://www.amwa.tv) as part of the [Networked Media Open Specifications](https://www.nmos.tv) initative.
