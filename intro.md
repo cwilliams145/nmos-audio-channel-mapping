@@ -4,7 +4,7 @@ It has been developed by the [Advanced Media Workflow Association](https://www.a
 
 See [here](https://github.com/AMWA-TV/nmos-audio-channel-mapping) for the GitHub repo for this Specification.
 
-See [here](https://amwa-tv.github.io/nmos) for an overview of NMOS specifcations.
+See [here](https://amwa-tv.github.io/nmos) for an overview of NMOS specifications.
 
 The documenation and API links immediately below, and the links in the page heading, are for the main development branch. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or under "VERSIONS..." in the page heading.
 
