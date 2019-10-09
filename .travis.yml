@@ -1,4 +1,3 @@
-if: type != push
 language: node_js
 node_js:
   - 8
