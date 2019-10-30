@@ -1,0 +1,46 @@
+---
+layout: default
+title: Schema output-caps-response-schema.json
+---
+
+<html>
+<meta charset="UTF-8">
+<h2>Schema output-caps-response-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/output-caps-response-schema.html">Resolve referenced schemas</a>
+</p>
+<div id="json-render">
+<script type="text/javascript" src="json-formatter.js"></script>
+<script>
+const formatter = new JSONFormatter.default(
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "List of Inputs that may be routed to a given output",
+  "title": "Output capabilities resource",
+  "required":[
+    "routable_inputs"
+  ],
+  "properties": {
+    "routable_inputs":{
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^[a-zA-Z0-9\\-_]+$"
+      }
+    }
+  }
+}
+,
+    3, // Collapse depth
+    {
+        pathsToCollapse: [
+            "properties.id"
+        ]
+    });
+document.getElementsByClassName("content")[0].appendChild(formatter.render());
+</script>
+</div>
+</html>

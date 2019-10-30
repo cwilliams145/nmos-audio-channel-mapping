@@ -1,0 +1,84 @@
+---
+layout: default
+title: Schema io-response-schema.json
+---
+
+<html>
+<meta charset="UTF-8">
+<h2>Schema io-response-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/io-response-schema.html">Resolve referenced schemas</a>
+</p>
+<div id="json-render">
+<script type="text/javascript" src="json-formatter.js"></script>
+<script>
+const formatter = new JSONFormatter.default(
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "IO Information view for entire API",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "inputs",
+    "outputs"
+  ],
+  "properties": {
+    "inputs":{
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9\\-_]+$":{
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "parent":{
+              "$ref": "input-parent-response-schema.json"
+            },
+            "channels":{
+              "$ref": "input-channels-response-schema.json"
+            },
+            "caps":{
+              "$ref": "input-caps-response-schema.json"
+            },
+            "properties":{
+              "$ref": "input-properties-schema.json"
+            }
+          }
+        }
+      }  
+    },
+    "outputs":{
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9\\-_]+$":{
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source_id":{
+              "$ref": "output-sourceID-response-schema.json"
+            },
+            "channels":{
+              "$ref": "output-channels-response-schema.json"
+            },
+            "caps":{
+              "$ref": "output-caps-response-schema.json"
+            },
+            "properties":{
+              "$ref": "output-properties-schema.json"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+,
+    3, // Collapse depth
+    {
+        pathsToCollapse: [
+            "properties.id"
+        ]
+    });
+document.getElementsByClassName("content")[0].appendChild(formatter.render());
+</script>
+</div>
+</html>

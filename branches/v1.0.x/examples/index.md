@@ -4,5 +4,5 @@
 
 ## Examples for branch v1.0.x
 
-- [base-get-200](base-get-200.json)
-- [io-get-200](io-get-200.json)
+- [base-get-200](base-get-200.html)
+- [io-get-200](io-get-200.html)
