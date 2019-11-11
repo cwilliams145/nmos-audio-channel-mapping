@@ -4,18 +4,43 @@
 
 [![Build Status](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg)](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping)
 
-IS-08 is an AMWA NMOS Specification to set channel mapping/selecting/shuffling settings for use with NMOS APIs.
 
-It has been developed by the [Advanced Media Workflow Association](https://www.amwa.tv) as part of the [Networked Media Open Specifications](https://www.nmos.tv) initative.
 
-See [here](https://github.com/AMWA-TV/nmos-audio-channel-mapping) for the GitHub repo for this Specification.
+---
+
+## About IS-08
+
+
+### What does it do?
+
+- Allows channel-level operations within NMOS environments
+ - For example: muting channels, swapping languages…
+
+### Why does it matter?
+
+- Provides expected functionality for typical production/broadcast operations
+- Extends usefulness of IS-05 and other NMOS specs.
+
+### How does it work?
+
+- Controller gets channel information from sending Node
+  - …and sends mapping matrix to the receiving Node
+- Can also do sender-side matrixing
+
+
+
+---
+
+
+IS-08 has been developed by the [Advanced Media Workflow Association](https://www.amwa.tv) as part of the [Networked Media Open Specifications](https://www.nmos.tv) initiative.
 
 See [here](https://amwa-tv.github.io/nmos) for an overview of NMOS specifications.
 
-The documenation and API links immediately below, and the links in the page heading, are for the main development branch. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or under "VERSIONS..." in the page heading.
+The formal (template) specification is provided in [this GitHub repository](https://github.com/AMWA-TV/nmos-audio-channel-mapping). These pages provide supporting documentation and HTML renders of the APIs (which are specified in RAML and JSON Schema).
+
+The documentation and API links immediately below, and the links in the page heading, are for an example development branch. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or under "VERSIONS..." in the page heading.
 
 Once AMWA has approved a Specification, its documentation and API links will be for the _most recent approved release_ (which may be earlier than what is shown by the default branch on the GitHub repo).
-
 
 ## Documentation for branch v1.0.x
 
