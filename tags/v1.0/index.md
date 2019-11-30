@@ -16,9 +16,9 @@
 
 ## APIs for release/tag v1.0
 
-- [ChannelMappingAPI](html-APIs/ChannelMappingAPI.html)
+- [ChannelMappingAPI](APIs/ChannelMappingAPI.html)
 
-### [JSON Schemas](html-APIs/schemas/)
+### [JSON Schemas](APIs/schemas/)
 
 
 ### [Examples](examples/)

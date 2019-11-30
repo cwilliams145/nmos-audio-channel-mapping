@@ -16,9 +16,9 @@
 
 ## APIs for branch v1.0.x
 
-- [ChannelMappingAPI](html-APIs/ChannelMappingAPI.html)
+- [ChannelMappingAPI](APIs/ChannelMappingAPI.html)
 
-### [JSON Schemas](html-APIs/schemas/)
+### [JSON Schemas](APIs/schemas/)
 
 
 ### [Examples](examples/)

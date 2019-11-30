@@ -55,9 +55,9 @@ Once AMWA has approved a Specification, its documentation and API links will be 
 
 ## APIs for branch v1.0.x
 
-- [ChannelMappingAPI](branches/v1.0.x/html-APIs/ChannelMappingAPI.html)
+- [ChannelMappingAPI](branches/v1.0.x/APIs/ChannelMappingAPI.html)
 
-### [JSON Schemas](branches/v1.0.x/html-APIs/schemas/)
+### [JSON Schemas](branches/v1.0.x/APIs/schemas/)
 
 
 ### [Examples](branches/v1.0.x/examples/)
