@@ -2,7 +2,7 @@
 
 # {{ site.github.project_tagline }}
 
-[![Build Status](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg)](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping)
+[![Build Status](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=v1.0.x)](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping)
 
 
 
