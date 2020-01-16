@@ -1,0 +1,83 @@
+---
+layout: default
+title: Example map-tables-get-200.json
+---
+
+<html>
+<meta charset="UTF-8">
+<h2>Example map-tables-get-200.json</h2>
+<div id="json-render">
+<script type="text/javascript" src="json-formatter.js"></script>
+<script>
+const formatter = new JSONFormatter.default(
+{
+  "activation": {
+    "mode": null,
+    "requested_time": null,
+    "activation_time": null
+  },
+  "map":{
+    "outA":{
+      "0":{
+        "input": "input1",
+        "channel_index": 1
+      },
+      "1":{
+        "input": "input1",
+        "channel_index": 2
+      },
+      "2":{
+        "input": "input1",
+        "channel_index": 3
+      },
+      "3":{
+        "input": "input1",
+        "channel_index": 4
+      },
+      "4":{
+        "input": null,
+        "channel_index": null
+      },
+      "5":{
+        "input": null,
+        "channel_index": null
+      },
+      "6":{
+        "input": null,
+        "channel_index": null
+      },
+      "7":{
+        "input": null,
+        "channel_index": null
+      }
+    },
+    "outB":{
+      "0":{
+        "input": "input4",
+        "channel_index": 0
+      },
+      "1":{
+        "input": "input4",
+        "channel_index": 1
+      }
+    }
+  }
+}
+,
+    3, // Collapse depth
+    {
+        pathsToCollapse: [
+            "properties.id"
+        ],
+        sortPropertiesBy: function(a, b) {
+           if (a === "title") { return -1; }
+           if (b === "title") { return 1; }
+           if (a === "description") { return -1; }
+           if (b === "description") { return 1; }
+           return a > b;
+        }
+    });
+document.getElementsByClassName("content")[0].appendChild(formatter.render());
+</script>
+</div>
+</html>
