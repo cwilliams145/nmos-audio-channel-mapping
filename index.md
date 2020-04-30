@@ -2,8 +2,9 @@
 
 # {{ site.github.project_tagline }}
 
-[![Build Status](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=v1.0.x)](https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping)
-
+| Repository | Default Branch | Lint (default) | Render (all) |
+| --- | --- | --- | --- |
+| [nmos-audio-channel-mapping](https://github.com/AMWA-TV/nmos-audio-channel-mapping) | v1.0.x | <a href="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping?branch=v1.0.x"><img src="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=v1.0.x" width="100"/></a> | <a href="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping?branch=gh-pages"><img src="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=gh-pages" width="100"/></a> |
 
 
 ---
@@ -38,9 +39,7 @@ See [here](https://amwa-tv.github.io/nmos) for an overview of NMOS specification
 
 The formal specification is provided in [this GitHub repository](https://github.com/AMWA-TV/nmos-audio-channel-mapping). These pages provide supporting documentation and HTML renders of the APIs (which are specified in RAML and JSON Schema).
 
-The documentation and API links immediately below, and the links in the page heading, are for an example development branch. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or under "VERSIONS..." in the page heading.
-
-Once AMWA has approved a Specification, its documentation and API links will be for the _most recent approved release_ (which may be earlier than what is shown by the default branch on the GitHub repo).
+The links to documentation, API and examples below and for DOCS and SPEC in the page menu bar are for this release (tag) or branch: **branches/v1.0.x**. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or in the VERSIONS menu.
 
 ## Documentation for branch v1.0.x
 
