@@ -11,6 +11,6 @@
 ### How does it work?
 
 - Controller gets channel information from sending Node
-  - …and sends mapping matrix to the receiving Node
-- Can also do sender-side matrixing
+  - …and sends mapping information to the receiving Node
+- Can also do sender-side mapping
 
