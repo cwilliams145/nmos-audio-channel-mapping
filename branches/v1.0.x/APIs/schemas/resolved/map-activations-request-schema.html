@@ -38,20 +38,20 @@ title: Schema map-activations-request-schema.json
             "description": "Describes one map table entry",
             "patternProperties": {
                 "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
+                    "description": "Names of the output",
                     "patternProperties": {
                         "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
+                            "description": "Index of channels",
                             "properties": {
                                 "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
+                                    "description": "Index of channel to be connected.",
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
                                 "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+                                    "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
                                     "type": [
                                         "string",
                                         "null"
@@ -72,16 +72,23 @@ title: Schema map-activations-request-schema.json
         "activation": {
             "$schema": "http://json-schema.org/draft-04/schema#",
             "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
+            "description": "Parameters concerned with activation of the map parameters",
             "properties": {
                 "mode": {
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), or scheduled_relative (when internal clock >= time of message receipt + requested_time)",
-                    "enum": [
-                        "activate_immediate",
-                        "activate_scheduled_absolute",
-                        "activate_scheduled_relative"
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "activate_immediate",
+                                "activate_scheduled_absolute",
+                                "activate_scheduled_relative"
+                            ],
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
                     ],
-                    "type": "string"
+                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), scheduled_relative (when internal clock >= time of message receipt + requested_time), or null (no activation scheduled)"
                 },
                 "requested_time": {
                     "anyOf": [
@@ -103,10 +110,6 @@ title: Schema map-activations-request-schema.json
             "type": "object"
         }
     },
-    "required": [
-        "activation",
-        "action"
-    ],
     "title": "Activations endpoint",
     "type": "object"
 }

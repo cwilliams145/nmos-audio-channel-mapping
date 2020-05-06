@@ -35,24 +35,24 @@ title: Schema map-tableentry-schema.json
   "title": "Map table entry",
   "patternProperties": {
     "^[a-zA-Z0-9\\-_]+$": {
-      "description": "Unique identifiers of the outputs",
+      "description": "Names of the output",
       "patternProperties":{
         "^(0|([1-9][0-9]*))$":{
-          "description": "Indexes of channels",
+          "description": "Index of channels",
           "required":[
             "input",
             "channel_index"
           ],
           "properties": {
             "input":{
-              "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+              "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
               "type": [
                 "string",
                 "null"
               ]
             },
             "channel_index":{
-              "description": "Index of the input channel to be routed. null for unrouted.",
+              "description": "Index of channel to be connected.",
               "type": [
                 "integer",
                 "null"

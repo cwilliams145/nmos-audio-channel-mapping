@@ -36,13 +36,13 @@ title: Schema map-base-schema.json
             "activations/",
             "active/"
         ],
-        "type": "string"
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "string",
+        "uniqueItems": true
     },
-    "maxItems": 2,
-    "minItems": 2,
     "title": "Channel Mapping API map base resource",
-    "type": "array",
-    "uniqueItems": true
+    "type": "array"
 }
 </textarea>
 <script>

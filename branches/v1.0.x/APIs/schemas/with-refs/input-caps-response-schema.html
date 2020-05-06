@@ -32,7 +32,7 @@ title: Schema input-caps-response-schema.json
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes an input's capabilities",
-  "title": "Input capabilities resource",
+  "title": "Input parameter capability resource",
   "additionalProperties": false,
   "required":[
     "reordering",
@@ -44,7 +44,7 @@ title: Schema input-caps-response-schema.json
     },
     "block_size":{
       "type": "integer",
-      "minimum": 1
+      "min": 1
     }
   }
 }

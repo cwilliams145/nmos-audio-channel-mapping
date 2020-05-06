@@ -31,16 +31,23 @@ title: Schema activation-schema.json
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false,
-    "description": "Parameters concerned with activation of the channel mapping",
+    "description": "Parameters concerned with activation of the map parameters",
     "properties": {
         "mode": {
-            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), or scheduled_relative (when internal clock >= time of message receipt + requested_time)",
-            "enum": [
-                "activate_immediate",
-                "activate_scheduled_absolute",
-                "activate_scheduled_relative"
+            "anyOf": [
+                {
+                    "enum": [
+                        "activate_immediate",
+                        "activate_scheduled_absolute",
+                        "activate_scheduled_relative"
+                    ],
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
             ],
-            "type": "string"
+            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), scheduled_relative (when internal clock >= time of message receipt + requested_time), or null (no activation scheduled)"
         },
         "requested_time": {
             "anyOf": [

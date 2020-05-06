@@ -29,22 +29,21 @@ title: Schema map-base-schema.json
 
 <textarea id="mytextarea">
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "array",
-  "description": "Describes the Channel Mapping API map base resource",
-  "title": "Channel Mapping API map base resource",
-  "items": {
-    "type": "string",
-    "enum": [
-      "activations/",
-      "active/"
-    ]
-  },
-  "minItems": 2,
-  "maxItems": 2,
-  "uniqueItems": true
-}
-</textarea>
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "description": "Describes the Channel Mapping API map base resource",
+    "title": "Channel Mapping API map base resource",
+    "items": {
+      "type": "string",
+      "enum": [
+        "activations/",
+        "active/"
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true
+    }
+  }</textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
     mode: {

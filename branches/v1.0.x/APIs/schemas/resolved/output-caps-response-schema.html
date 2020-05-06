@@ -30,26 +30,16 @@ title: Schema output-caps-response-schema.json
 <textarea id="mytextarea">
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Describes an output's capabilities",
+    "description": "List of Inputs that may be routed to a given output",
     "properties": {
         "routable_inputs": {
-            "anyOf": [
-                {
-                    "items": {
-                        "pattern": "^[a-zA-Z0-9\\-_]+$",
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "type": "array",
-                    "uniqueItems": true
-                },
-                {
-                    "type": "null"
-                }
-            ],
-            "description": "List of Inputs that may be routed to this Output, including null if unrouted Output channels are allowed. This property MUST be set to null, if no such restrictions exist."
+            "items": {
+                "pattern": "^[a-zA-Z0-9\\-_]+$",
+                "type": [
+                    "string",
+                    "null"
+                ]
+            }
         }
     },
     "required": [

@@ -38,13 +38,13 @@ title: Schema output-base-schema.json
             "caps/",
             "properties/"
         ],
-        "type": "string"
+        "maxItems": 4,
+        "minItems": 4,
+        "type": "string",
+        "uniqueItems": true
     },
-    "maxItems": 4,
-    "minItems": 4,
     "title": "Channel Mapping API output base resource",
-    "type": "array",
-    "uniqueItems": true
+    "type": "array"
 }
 </textarea>
 <script>

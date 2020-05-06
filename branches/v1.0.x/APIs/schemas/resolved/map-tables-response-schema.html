@@ -36,7 +36,7 @@ title: Schema map-tables-response-schema.json
         "activation": {
             "$schema": "http://json-schema.org/draft-04/schema#",
             "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
+            "description": "Parameters concerned with activation of the transport parameters",
             "properties": {
                 "activation_time": {
                     "anyOf": [
@@ -48,7 +48,7 @@ title: Schema map-tables-response-schema.json
                             "type": "null"
                         }
                     ],
-                    "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
+                    "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating the absolute time the receiver will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. On the staged endpoint this field returns to null once the activation is completed. For immediate activations on the staged endpoint this property will be the time the activation actually occurred in the response to the PATCH request, but null in response to any GET requests thereafter."
                 },
                 "mode": {
                     "anyOf": [
@@ -64,7 +64,7 @@ title: Schema map-tables-response-schema.json
                             "type": "null"
                         }
                     ],
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), scheduled_relative (when internal clock >= time of message receipt + requested_time), or null (no activation scheduled)."
+                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), scheduled_relative (when internal clock >= time of message receipt + requested_time), or null (no activation scheduled). This parameter returns to null on the staged endpoint once an activation is completed. For immediate activations, in the response to the PATCH request this field will be set to 'activate_immediate', but will be null in response to any subsequent GET requests."
                 },
                 "requested_time": {
                     "anyOf": [
@@ -76,7 +76,7 @@ title: Schema map-tables-response-schema.json
                             "type": "null"
                         }
                     ],
-                    "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
+                    "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating time (absolute or relative) for activation requested. This field returns to null once the activation is completed on the staged endpoint. For an immediate activation this field will always be null on the staged endpoint, even in the response to the PATCH request."
                 }
             },
             "required": [
@@ -91,20 +91,20 @@ title: Schema map-tables-response-schema.json
             "description": "Describes one map table entry",
             "patternProperties": {
                 "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
+                    "description": "Names of the output",
                     "patternProperties": {
                         "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
+                            "description": "Index of channels",
                             "properties": {
                                 "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
+                                    "description": "Index of channel to be connected.",
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
                                 "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+                                    "description": "Name of the input the channel to be connected belongs to. null for disconnected.",
                                     "type": [
                                         "string",
                                         "null"
