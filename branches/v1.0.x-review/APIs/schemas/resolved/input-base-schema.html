@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example map-tables-patch-423.json
+title: Schema input-base-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example map-tables-patch-423.json</h2>
+<h2>Schema input-base-schema.json</h2>
+<p>
+    <a href="../../schemas/with-refs/input-base-schema.html">Show original (referenced schemas with $ref)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,11 +29,24 @@ title: Example map-tables-patch-423.json
 
 <textarea id="mytextarea">
 {
-    "code": 423,
-    "error": "Staged resource is locked by a pending scheduled activation.",
-    "debug": null
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Describes the Channel Mapping API input base resource",
+    "items": {
+        "enum": [
+            "caps/",
+            "parent/",
+            "channels/",
+            "properties/"
+        ],
+        "type": "string"
+    },
+    "maxItems": 4,
+    "minItems": 4,
+    "title": "Channel Mapping API input base resource",
+    "type": "array",
+    "uniqueItems": true
 }
-  </textarea>
+</textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
     mode: {
@@ -38,7 +54,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: true,
+    lineNumbers: false,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,

@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example map-activation-activationid-delete-400.json
+title: Schema input-caps-response-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example map-activation-activationid-delete-400.json</h2>
+<h2>Schema input-caps-response-schema.json</h2>
+<p>
+    <a href="../../schemas/with-refs/input-caps-response-schema.html">Show original (referenced schemas with $ref)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,9 +29,24 @@ title: Example map-activation-activationid-delete-400.json
 
 <textarea id="mytextarea">
 {
-  "code": 400,
-  "error": "Could not match the request to the schema",
-  "debug": null
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "Describes an input's capabilities",
+    "properties": {
+        "block_size": {
+            "minimum": 1,
+            "type": "integer"
+        },
+        "reordering": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "reordering",
+        "block_size"
+    ],
+    "title": "Input capabilities resource",
+    "type": "object"
 }
 </textarea>
 <script>
@@ -38,7 +56,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: true,
+    lineNumbers: false,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,
