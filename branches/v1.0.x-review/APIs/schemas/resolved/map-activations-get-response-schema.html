@@ -29,29 +29,112 @@ title: Schema map-activations-get-response-schema.json
 
 <textarea id="mytextarea">
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Activations endpoint",
-  "description": "List of all currently pending activations",
-  "type": "object",
-  "additionalPropertes": false,
-  "patternProperties": {
-    "^[a-zA-Z0-9\\-_]+$": {
-      "type": "object",
-      "additionalPropertes": false,
-      "required": [
-        "activation",
-        "action"
-      ],
-      "properties": {
-        "activation":{
-          "$ref": "activation-response-schema.json"
-        },
-        "action:":{
-          "$ref": "map-tableentry-schema.json"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalPropertes": false,
+    "description": "List of all currently pending activations",
+    "patternProperties": {
+        "^[a-zA-Z0-9\\-_]+$": {
+            "additionalPropertes": false,
+            "properties": {
+                "action:": {
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "description": "Describes one map table entry",
+                    "patternProperties": {
+                        "^[a-zA-Z0-9\\-_]+$": {
+                            "description": "Unique identifiers of the outputs",
+                            "patternProperties": {
+                                "^(0|([1-9][0-9]*))$": {
+                                    "description": "Indexes of channels",
+                                    "properties": {
+                                        "channel_index": {
+                                            "description": "Index of the input channel to be routed. null for unrouted.",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "input": {
+                                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "input",
+                                        "channel_index"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "title": "Map table entry",
+                    "type": "object"
+                },
+                "activation": {
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "additionalProperties": false,
+                    "description": "Parameters concerned with activation of the channel mapping",
+                    "properties": {
+                        "activation_time": {
+                            "anyOf": [
+                                {
+                                    "pattern": "^[0-9]+:[0-9]+$",
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
+                        },
+                        "mode": {
+                            "anyOf": [
+                                {
+                                    "enum": [
+                                        "activate_immediate",
+                                        "activate_scheduled_absolute",
+                                        "activate_scheduled_relative"
+                                    ],
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), scheduled_relative (when internal clock >= time of message receipt + requested_time), or null (no activation scheduled)."
+                        },
+                        "requested_time": {
+                            "anyOf": [
+                                {
+                                    "pattern": "^[0-9]+:[0-9]+$",
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
+                        }
+                    },
+                    "required": [
+                        "mode",
+                        "requested_time",
+                        "activation_time"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "activation",
+                "action"
+            ],
+            "type": "object"
         }
-      }
-    }
-  }
+    },
+    "title": "Activations endpoint",
+    "type": "object"
 }
 </textarea>
 <script>

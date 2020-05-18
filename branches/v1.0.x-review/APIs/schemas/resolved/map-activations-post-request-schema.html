@@ -29,23 +29,86 @@ title: Schema map-activations-post-request-schema.json
 
 <textarea id="mytextarea">
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Activations endpoint",
-  "description": "Add a new activation to the activations list",
-  "type": "object",
-  "additionalPropertes": false,
-  "required": [
-    "activation",
-    "action"
-  ],
-  "properties": {
-    "activation":{
-      "$ref": "activation-schema.json"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalPropertes": false,
+    "description": "Add a new activation to the activations list",
+    "properties": {
+        "action:": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Describes one map table entry",
+            "patternProperties": {
+                "^[a-zA-Z0-9\\-_]+$": {
+                    "description": "Unique identifiers of the outputs",
+                    "patternProperties": {
+                        "^(0|([1-9][0-9]*))$": {
+                            "description": "Indexes of channels",
+                            "properties": {
+                                "channel_index": {
+                                    "description": "Index of the input channel to be routed. null for unrouted.",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "input": {
+                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "input",
+                                "channel_index"
+                            ]
+                        }
+                    }
+                }
+            },
+            "title": "Map table entry",
+            "type": "object"
+        },
+        "activation": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "additionalProperties": false,
+            "description": "Parameters concerned with activation of the channel mapping",
+            "properties": {
+                "mode": {
+                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock >= requested_time), or scheduled_relative (when internal clock >= time of message receipt + requested_time)",
+                    "enum": [
+                        "activate_immediate",
+                        "activate_scheduled_absolute",
+                        "activate_scheduled_relative"
+                    ],
+                    "type": "string"
+                },
+                "requested_time": {
+                    "anyOf": [
+                        {
+                            "pattern": "^[0-9]+:[0-9]+$",
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "String formatted TAI timestamp (<seconds>:<nanoseconds>) indicating time (absolute or relative) for activation"
+                }
+            },
+            "required": [
+                "mode"
+            ],
+            "title": "Activation resource",
+            "type": "object"
+        }
     },
-    "action:":{
-      "$ref": "map-tableentry-schema.json"
-    }
-  }
+    "required": [
+        "activation",
+        "action"
+    ],
+    "title": "Activations endpoint",
+    "type": "object"
 }
 </textarea>
 <script>
