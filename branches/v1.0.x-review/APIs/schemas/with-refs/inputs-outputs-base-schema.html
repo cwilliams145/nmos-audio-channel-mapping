@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example output-name-properties-get-200.json
+title: Schema inputs-outputs-base-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example output-name-properties-get-200.json</h2>
+<h2>Schema inputs-outputs-base-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/inputs-outputs-base-schema.html">Resolve referenced schemas (may reorder keys)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,8 +29,15 @@ title: Example output-name-properties-get-200.json
 
 <textarea id="mytextarea">
 {
-    "name": "IP Output",
-    "description": "SMPTE 2110-30 IP Output"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "description": "List of paths for the inputs or outputs",
+  "title": "Inputs or Outputs base resource",
+  "items": {
+    "type": "string",
+    "pattern": "^[a-zA-Z0-9\\-_]+/$"
+  },
+  "uniqueItems": true
 }
 </textarea>
 <script>

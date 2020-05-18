@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example map-tables-get-200.json
+title: Schema map-entry-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example map-tables-get-200.json</h2>
+<h2>Schema map-entry-schema.json</h2>
+<p>
+    <a href="../../schemas/with-refs/map-entry-schema.html">Show original (referenced schemas with $ref)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,57 +29,40 @@ title: Example map-tables-get-200.json
 
 <textarea id="mytextarea">
 {
-  "activation": {
-    "mode": null,
-    "requested_time": null,
-    "activation_time": null
-  },
-  "map":{
-    "outA":{
-      "0":{
-        "input": "input1",
-        "channel_index": 1
-      },
-      "1":{
-        "input": "input1",
-        "channel_index": 2
-      },
-      "2":{
-        "input": "input1",
-        "channel_index": 3
-      },
-      "3":{
-        "input": "input1",
-        "channel_index": 4
-      },
-      "4":{
-        "input": null,
-        "channel_index": null
-      },
-      "5":{
-        "input": null,
-        "channel_index": null
-      },
-      "6":{
-        "input": null,
-        "channel_index": null
-      },
-      "7":{
-        "input": null,
-        "channel_index": null
-      }
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Describes one map table entry",
+    "patternProperties": {
+        "^[a-zA-Z0-9\\-_]+$": {
+            "description": "Unique identifiers of the outputs",
+            "patternProperties": {
+                "^(0|([1-9][0-9]*))$": {
+                    "description": "Indexes of channels",
+                    "properties": {
+                        "channel_index": {
+                            "description": "Index of the input channel to be routed. null for unrouted.",
+                            "type": [
+                                "integer",
+                                "null"
+                            ]
+                        },
+                        "input": {
+                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "input",
+                        "channel_index"
+                    ]
+                }
+            }
+        }
     },
-    "outB":{
-      "0":{
-        "input": "input4",
-        "channel_index": 0
-      },
-      "1":{
-        "input": "input4",
-        "channel_index": 1
-      }
-    }
-  }
+    "title": "Map table entry",
+    "type": "object"
 }
 </textarea>
 <script>
@@ -86,7 +72,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: true,
+    lineNumbers: false,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,

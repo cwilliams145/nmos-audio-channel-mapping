@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Schema map-activations-get-response-schema.json
+title: Schema map-activations-activation-get-response-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Schema map-activations-get-response-schema.json</h2>
+<h2>Schema map-activations-activation-get-response-schema.json</h2>
 <p>
-    <a href="../../schemas/with-refs/map-activations-get-response-schema.html">Show original (referenced schemas with $ref)</a>
+    <a href="../../schemas/with-refs/map-activations-activation-get-response-schema.html">Show original (referenced schemas with $ref)</a>
 </p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
@@ -30,26 +30,20 @@ title: Schema map-activations-get-response-schema.json
 <textarea id="mytextarea">
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Activations endpoint",
-  "description": "List of all currently pending activations",
+  "title": "Single activation endpoint",
+  "description": "A single pending activation",
   "type": "object",
   "additionalPropertes": false,
-  "patternProperties": {
-    "^[a-zA-Z0-9\\-_]+$": {
-      "type": "object",
-      "additionalPropertes": false,
-      "required": [
-        "activation",
-        "action"
-      ],
-      "properties": {
-        "activation":{
-          "$ref": "activation-response-schema.json"
-        },
-        "action:":{
-          "$ref": "map-tableentry-schema.json"
-        }
-      }
+  "required": [
+    "activation",
+    "action"
+  ],
+  "properties": {
+    "activation":{
+      "$ref": "activation-response-schema.json"
+    },
+    "action:":{
+      "$ref": "map-tableentry-schema.json"
     }
   }
 }

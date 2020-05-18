@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example input-name-root-get-200.json
+title: Schema output-sourceid-response-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example input-name-root-get-200.json</h2>
+<h2>Schema output-sourceid-response-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/output-sourceid-response-schema.html">Resolve referenced schemas (may reorder keys)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -25,13 +28,13 @@ title: Example input-name-root-get-200.json
 </style>
 
 <textarea id="mytextarea">
-[
-  "caps/",
-  "parent/",
-  "channels/",
-  "properties/"
-]
-</textarea>
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": ["string", "null"],
+  "description": "Gives an output's source ID",
+  "title": "Output source ID resource",  
+  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+}</textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
     mode: {

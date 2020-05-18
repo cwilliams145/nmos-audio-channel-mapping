@@ -1,14 +1,11 @@
 ---
 layout: default
-title: Schema input-output-root-schema.json
+title: Example map-base-get-200.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Schema input-output-root-schema.json</h2>
-<p>
-    <a href="../../schemas/with-refs/input-output-root-schema.html">Show original (referenced schemas with $ref)</a>
-</p>
+<h2>Example map-base-get-200.json</h2>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -28,17 +25,10 @@ title: Schema input-output-root-schema.json
 </style>
 
 <textarea id="mytextarea">
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "List of inputs/outputs",
-    "items": {
-        "pattern": "^[a-zA-Z0-9\\-_]+/$",
-        "type": "string"
-    },
-    "title": "Input/Outputs root resource",
-    "type": "array",
-    "uniqueItems": true
-}
+[
+  "activations/",
+  "active/"
+]
 </textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
@@ -47,7 +37,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: false,
+    lineNumbers: true,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,

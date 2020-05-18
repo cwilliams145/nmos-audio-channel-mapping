@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example map-activewithid-get-200.json
+title: Schema map-active-output-response-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example map-activewithid-get-200.json</h2>
+<h2>Schema map-active-output-response-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/map-active-output-response-schema.html">Resolve referenced schemas (may reorder keys)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,16 +29,22 @@ title: Example map-activewithid-get-200.json
 
 <textarea id="mytextarea">
 {
-  "outB":{
-      "0":{
-        "input": "input4",
-        "channel_index": 0
-      },
-      "1":{
-        "input": "input4",
-        "channel_index": 1
-      }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes the map for one specific outputId",
+  "title": "Map table resource",
+  "additionalProperties": false,
+  "required": [
+    "map"
+  ],
+  "properties": {
+    "activation": {
+      "$ref": "activation-response-schema.json"
+    },
+    "map":{
+      "$ref": "map-tableentry-schema.json"
     }
+  }
 }
 </textarea>
 <script>

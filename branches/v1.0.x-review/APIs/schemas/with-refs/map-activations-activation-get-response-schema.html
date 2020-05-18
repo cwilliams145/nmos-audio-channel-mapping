@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example map-root-get-200.json
+title: Schema map-activations-activation-get-response-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example map-root-get-200.json</h2>
+<h2>Schema map-activations-activation-get-response-schema.json</h2>
+<p>
+    <a href="../../schemas/resolved/map-activations-activation-get-response-schema.html">Resolve referenced schemas (may reorder keys)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -25,10 +28,25 @@ title: Example map-root-get-200.json
 </style>
 
 <textarea id="mytextarea">
-[
-  "activations/",
-  "active/"
-]
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Single activation endpoint",
+  "description": "A single pending activation",
+  "type": "object",
+  "additionalPropertes": false,
+  "required": [
+    "activation",
+    "action"
+  ],
+  "properties": {
+    "activation":{
+      "$ref": "activation-response-schema.json"
+    },
+    "action:":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
+}
 </textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {

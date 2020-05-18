@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Example input-name-caps-200.json
+title: Schema inputs-outputs-base-schema.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example input-name-caps-200.json</h2>
+<h2>Schema inputs-outputs-base-schema.json</h2>
+<p>
+    <a href="../../schemas/with-refs/inputs-outputs-base-schema.html">Show original (referenced schemas with $ref)</a>
+</p>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,8 +29,15 @@ title: Example input-name-caps-200.json
 
 <textarea id="mytextarea">
 {
-  "reordering": true,
-  "block_size": 8
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "List of paths for the inputs or outputs",
+    "items": {
+        "pattern": "^[a-zA-Z0-9\\-_]+/$",
+        "type": "string"
+    },
+    "title": "Inputs or Outputs base resource",
+    "type": "array",
+    "uniqueItems": true
 }
 </textarea>
 <script>
@@ -37,7 +47,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: true,
+    lineNumbers: false,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,

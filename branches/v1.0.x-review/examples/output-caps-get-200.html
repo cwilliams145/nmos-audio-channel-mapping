@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Example inputs-root-get-200.json
+title: Example output-caps-get-200.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example inputs-root-get-200.json</h2>
+<h2>Example output-caps-get-200.json</h2>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -25,12 +25,13 @@ title: Example inputs-root-get-200.json
 </style>
 
 <textarea id="mytextarea">
-[
-  "input1/",
-  "input2/",
-  "input3/",
-  "input4/"
-]
+{
+  "routable_inputs": [
+    "input1",
+    "input2"
+  ]
+}
+
 </textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {

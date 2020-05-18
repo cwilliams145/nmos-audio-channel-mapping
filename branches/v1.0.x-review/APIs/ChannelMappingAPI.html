@@ -565,7 +565,7 @@ pre code {
       }
     }
   }
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="map" class="panel-title">Map root</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map"><span class="parent"></span>/map</a> <span class="methods"><a href="#map_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List of paths available from this API endpoint</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/map</h4></div><div class="modal-body"><div class="alert alert-info"><p>List of paths available from this API endpoint</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="map" class="panel-title">Map</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map"><span class="parent"></span>/map</a> <span class="methods"><a href="#map_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List of paths available from this API endpoint</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/map</h4></div><div class="modal-body"><div class="alert alert-info"><p>List of paths available from this API endpoint</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Describes the Channel Mapping API map base resource",
     "items": {
@@ -586,112 +586,29 @@ pre code {
   "active/"
 ]
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_activations"><span class="parent">/map</span>/activations</a> <span class="methods"><a href="#map_activations_get"><span class="badge badge_get">get</span></a> <a href="#map_activations_post"><span class="badge badge_post">post</span></a> <a href="#map_activations_options"><span class="badge badge_options">options</span></a></span></h4></div><div id="panel_map_activations" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_activations_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List pending scheduled activations</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_activations_post'" class="list-group-item"><span class="badge badge_post">post</span><div class="method_description"><p>Create a new activation</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_activations_options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/activations</h4></div><div class="modal-body"><div class="alert alert-info"><p>List pending scheduled activations</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalPropertes": false,
-    "description": "List of all currently pending activations",
-    "patternProperties": {
-        "^[a-zA-Z0-9\\-_]+$": {
-            "additionalPropertes": false,
-            "properties": {
-                "action:": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "description": "Describes one map table entry",
-                    "patternProperties": {
-                        "^[a-zA-Z0-9\\-_]+$": {
-                            "description": "Unique identifiers of the outputs",
-                            "patternProperties": {
-                                "^(0|([1-9][0-9]*))$": {
-                                    "description": "Indexes of channels",
-                                    "properties": {
-                                        "channel_index": {
-                                            "description": "Index of the input channel to be routed. null for unrouted.",
-                                            "type": [
-                                                "integer",
-                                                "null"
-                                            ]
-                                        },
-                                        "input": {
-                                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    },
-                                    "required": [
-                                        "input",
-                                        "channel_index"
-                                    ]
-                                }
-                            }
-                        }
-                    },
-                    "title": "Map table entry",
-                    "type": "object"
-                },
-                "activation": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "additionalProperties": false,
-                    "description": "Parameters concerned with activation of the channel mapping",
-                    "properties": {
-                        "activation_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                        },
-                        "mode": {
-                            "anyOf": [
-                                {
-                                    "enum": [
-                                        "activate_immediate",
-                                        "activate_scheduled_absolute",
-                                        "activate_scheduled_relative"
-                                    ],
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                        },
-                        "requested_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                        }
-                    },
-                    "required": [
-                        "mode",
-                        "requested_time",
-                        "activation_time"
-                    ],
-                    "type": "object"
-                }
-            },
-            "required": [
-                "activation",
-                "action"
-            ],
-            "type": "object"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Activations endpoint",
+  "description": "List of all currently pending activations",
+  "type": "object",
+  "additionalPropertes": false,
+  "patternProperties": {
+    "^[a-zA-Z0-9\\-_]+$": {
+      "type": "object",
+      "additionalPropertes": false,
+      "required": [
+        "activation",
+        "action"
+      ],
+      "properties": {
+        "activation":{
+          "$ref": "activation-response-schema.json"
+        },
+        "action:":{
+          "$ref": "map-tableentry-schema.json"
         }
-    },
-    "title": "Activations endpoint",
-    "type": "object"
+      }
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "1" :{
@@ -734,86 +651,23 @@ pre code {
   }
 }
 </code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations_post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post</span> <span class="parent">/map</span>/activations</h4></div><div class="modal-body"><div class="alert alert-info"><p>Create a new activation</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations_post_request" data-toggle="tab">Request</a></li><li><a href="#map_activations_post_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations_post_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalPropertes": false,
-    "description": "Add a new activation to the activations list",
-    "properties": {
-        "action:": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "Describes one map table entry",
-            "patternProperties": {
-                "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
-                    "patternProperties": {
-                        "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
-                            "properties": {
-                                "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
-                                    "type": [
-                                        "integer",
-                                        "null"
-                                    ]
-                                },
-                                "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            },
-                            "required": [
-                                "input",
-                                "channel_index"
-                            ]
-                        }
-                    }
-                }
-            },
-            "title": "Map table entry",
-            "type": "object"
-        },
-        "activation": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
-            "properties": {
-                "mode": {
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), or scheduled_relative (when internal clock &gt;= time of message receipt + requested_time)",
-                    "enum": [
-                        "activate_immediate",
-                        "activate_scheduled_absolute",
-                        "activate_scheduled_relative"
-                    ],
-                    "type": "string"
-                },
-                "requested_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation"
-                }
-            },
-            "required": [
-                "mode"
-            ],
-            "title": "Activation resource",
-            "type": "object"
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Activations endpoint",
+  "description": "Add a new activation to the activations list",
+  "type": "object",
+  "additionalPropertes": false,
+  "required": [
+    "activation",
+    "action"
+  ],
+  "properties": {
+    "activation":{
+      "$ref": "activation-schema.json"
     },
-    "required": [
-        "activation",
-        "action"
-    ],
-    "title": "Activations endpoint",
-    "type": "object"
+    "action:":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation":{
@@ -834,113 +688,30 @@ pre code {
   }
 }
 </code></pre></div></div><div class="tab-pane" id="map_activations_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>A 200 response is returned when a request for an immediate activation is accepted.</p><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalPropertes": false,
-    "description": "Activation response",
-    "maxProperties": 1,
-    "patternProperties": {
-        "^[a-zA-Z0-9\\-_]+$": {
-            "additionalPropertes": false,
-            "properties": {
-                "action:": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "description": "Describes one map table entry",
-                    "patternProperties": {
-                        "^[a-zA-Z0-9\\-_]+$": {
-                            "description": "Unique identifiers of the outputs",
-                            "patternProperties": {
-                                "^(0|([1-9][0-9]*))$": {
-                                    "description": "Indexes of channels",
-                                    "properties": {
-                                        "channel_index": {
-                                            "description": "Index of the input channel to be routed. null for unrouted.",
-                                            "type": [
-                                                "integer",
-                                                "null"
-                                            ]
-                                        },
-                                        "input": {
-                                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    },
-                                    "required": [
-                                        "input",
-                                        "channel_index"
-                                    ]
-                                }
-                            }
-                        }
-                    },
-                    "title": "Map table entry",
-                    "type": "object"
-                },
-                "activation": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "additionalProperties": false,
-                    "description": "Parameters concerned with activation of the channel mapping",
-                    "properties": {
-                        "activation_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                        },
-                        "mode": {
-                            "anyOf": [
-                                {
-                                    "enum": [
-                                        "activate_immediate",
-                                        "activate_scheduled_absolute",
-                                        "activate_scheduled_relative"
-                                    ],
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                        },
-                        "requested_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                        }
-                    },
-                    "required": [
-                        "mode",
-                        "requested_time",
-                        "activation_time"
-                    ],
-                    "type": "object"
-                }
-            },
-            "required": [
-                "activation",
-                "action"
-            ],
-            "type": "object"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Activations endpoint",
+  "description": "Activation response",
+  "type": "object",
+  "additionalPropertes": false,
+  "maxProperties": 1,
+  "patternProperties": {
+    "^[a-zA-Z0-9\\-_]+$": {
+      "type": "object",
+      "additionalPropertes": false,
+      "required": [
+        "activation",
+        "action"
+      ],
+      "properties": {
+        "activation":{
+          "$ref": "activation-response-schema.json"
+        },
+        "action:":{
+          "$ref": "map-tableentry-schema.json"
         }
-    },
-    "title": "Activations endpoint",
-    "type": "object"
+      }
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "3": {
@@ -964,113 +735,30 @@ pre code {
   }
 }
 </code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/202" target="_blank">202</a></h2><p>A 202 response is returned when a request for a scheduled activation is accepted, to indicate that while the request itself was acceptable it has not yet been acted upon by the API.</p><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalPropertes": false,
-    "description": "Activation response",
-    "maxProperties": 1,
-    "patternProperties": {
-        "^[a-zA-Z0-9\\-_]+$": {
-            "additionalPropertes": false,
-            "properties": {
-                "action:": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "description": "Describes one map table entry",
-                    "patternProperties": {
-                        "^[a-zA-Z0-9\\-_]+$": {
-                            "description": "Unique identifiers of the outputs",
-                            "patternProperties": {
-                                "^(0|([1-9][0-9]*))$": {
-                                    "description": "Indexes of channels",
-                                    "properties": {
-                                        "channel_index": {
-                                            "description": "Index of the input channel to be routed. null for unrouted.",
-                                            "type": [
-                                                "integer",
-                                                "null"
-                                            ]
-                                        },
-                                        "input": {
-                                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ]
-                                        }
-                                    },
-                                    "required": [
-                                        "input",
-                                        "channel_index"
-                                    ]
-                                }
-                            }
-                        }
-                    },
-                    "title": "Map table entry",
-                    "type": "object"
-                },
-                "activation": {
-                    "$schema": "http://json-schema.org/draft-04/schema#",
-                    "additionalProperties": false,
-                    "description": "Parameters concerned with activation of the channel mapping",
-                    "properties": {
-                        "activation_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                        },
-                        "mode": {
-                            "anyOf": [
-                                {
-                                    "enum": [
-                                        "activate_immediate",
-                                        "activate_scheduled_absolute",
-                                        "activate_scheduled_relative"
-                                    ],
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                        },
-                        "requested_time": {
-                            "anyOf": [
-                                {
-                                    "pattern": "^[0-9]+:[0-9]+$",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ],
-                            "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                        }
-                    },
-                    "required": [
-                        "mode",
-                        "requested_time",
-                        "activation_time"
-                    ],
-                    "type": "object"
-                }
-            },
-            "required": [
-                "activation",
-                "action"
-            ],
-            "type": "object"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Activations endpoint",
+  "description": "Activation response",
+  "type": "object",
+  "additionalPropertes": false,
+  "maxProperties": 1,
+  "patternProperties": {
+    "^[a-zA-Z0-9\\-_]+$": {
+      "type": "object",
+      "additionalPropertes": false,
+      "required": [
+        "activation",
+        "action"
+      ],
+      "properties": {
+        "activation":{
+          "$ref": "activation-response-schema.json"
+        },
+        "action:":{
+          "$ref": "map-tableentry-schema.json"
         }
-    },
-    "title": "Activations endpoint",
-    "type": "object"
+      }
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "3": {
@@ -1164,106 +852,23 @@ pre code {
   "debug": null
 }
 </code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations_options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/map</span>/activations</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations_options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations_options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_activations__activationid_"><span class="parent">/map/activations</span>/{activationId}</a> <span class="methods"><a href="#map_activations__activationid__get"><span class="badge badge_get">get</span></a> <a href="#map_activations__activationid__delete"><span class="badge badge_delete">delete</span></a> <a href="#map_activations__activationid__options"><span class="badge badge_options">options</span></a></span></h4></div><div id="panel_map_activations__activationid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_activations__activationid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get a single pending scheduled activation</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_activations__activationid__delete'" class="list-group-item"><span class="badge badge_delete">delete</span><div class="method_description"><p>Cancel a pending scheduled activation</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#map_activations__activationid__options'" class="list-group-item"><span class="badge badge_options">options</span><div class="method_description"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations__activationid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map/activations</span>/{activationId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get a single pending scheduled activation</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations__activationid__get_request" data-toggle="tab">Request</a></li><li><a href="#map_activations__activationid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations__activationid__get_request"><h3>URI Parameters</h3><ul><li><strong>activationId</strong>: <em><span class="required">required</span>(string - pattern: ^[a-zA-Z0-9\-_]+$)</em></li></ul></div><div class="tab-pane" id="map_activations__activationid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalPropertes": false,
-    "description": "A single pending activation",
-    "properties": {
-        "action:": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "Describes one map table entry",
-            "patternProperties": {
-                "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
-                    "patternProperties": {
-                        "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
-                            "properties": {
-                                "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
-                                    "type": [
-                                        "integer",
-                                        "null"
-                                    ]
-                                },
-                                "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            },
-                            "required": [
-                                "input",
-                                "channel_index"
-                            ]
-                        }
-                    }
-                }
-            },
-            "title": "Map table entry",
-            "type": "object"
-        },
-        "activation": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
-            "properties": {
-                "activation_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                },
-                "mode": {
-                    "anyOf": [
-                        {
-                            "enum": [
-                                "activate_immediate",
-                                "activate_scheduled_absolute",
-                                "activate_scheduled_relative"
-                            ],
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                },
-                "requested_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                }
-            },
-            "required": [
-                "mode",
-                "requested_time",
-                "activation_time"
-            ],
-            "type": "object"
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Single activation endpoint",
+  "description": "A single pending activation",
+  "type": "object",
+  "additionalPropertes": false,
+  "required": [
+    "activation",
+    "action"
+  ],
+  "properties": {
+    "activation":{
+      "$ref": "activation-response-schema.json"
     },
-    "required": [
-        "activation",
-        "action"
-    ],
-    "title": "Single activation endpoint",
-    "type": "object"
+    "action:":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation":{
@@ -1284,106 +889,23 @@ pre code {
     }
   }
 }</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Could not find the requested resource</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations__activationid__delete"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_delete">delete</span> <span class="parent">/map/activations</span>/{activationId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Cancel a pending scheduled activation</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations__activationid__delete_request" data-toggle="tab">Request</a></li><li><a href="#map_activations__activationid__delete_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations__activationid__delete_request"><h3>URI Parameters</h3><ul><li><strong>activationId</strong>: <em><span class="required">required</span>(string - pattern: ^[a-zA-Z0-9\-_]+$)</em></li></ul></div><div class="tab-pane" id="map_activations__activationid__delete_response"><h2>HTTP status code <a href="http://httpstatus.es/204" target="_blank">204</a></h2><p>Resource deleted successfully</p><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Could not find the requested resource</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_activations__activationid__options"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_options">options</span> <span class="parent">/map/activations</span>/{activationId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>A pre-flight check generally used for Cross-Origin Resource Sharing (CORS) purposes</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_activations__activationid__options_request" data-toggle="tab">Request</a></li><li><a href="#map_activations__activationid__options_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_activations__activationid__options_request"><h3>URI Parameters</h3><ul><li><strong>activationId</strong>: <em><span class="required">required</span>(string - pattern: ^[a-zA-Z0-9\-_]+$)</em></li></ul></div><div class="tab-pane" id="map_activations__activationid__options_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_active"><span class="parent">/map</span>/active</a> <span class="methods"><a href="#map_active_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map_active" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_active_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get a view of the entire active map</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_active_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map</span>/active</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get a view of the entire active map</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_active_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_active_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
-    "description": "Describes the map table object",
-    "properties": {
-        "activation": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
-            "properties": {
-                "activation_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                },
-                "mode": {
-                    "anyOf": [
-                        {
-                            "enum": [
-                                "activate_immediate",
-                                "activate_scheduled_absolute",
-                                "activate_scheduled_relative"
-                            ],
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                },
-                "requested_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                }
-            },
-            "required": [
-                "mode",
-                "requested_time",
-                "activation_time"
-            ],
-            "type": "object"
-        },
-        "map": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "Describes one map table entry",
-            "patternProperties": {
-                "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
-                    "patternProperties": {
-                        "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
-                            "properties": {
-                                "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
-                                    "type": [
-                                        "integer",
-                                        "null"
-                                    ]
-                                },
-                                "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            },
-                            "required": [
-                                "input",
-                                "channel_index"
-                            ]
-                        }
-                    }
-                }
-            },
-            "title": "Map table entry",
-            "type": "object"
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes the map table object",
+  "title": "Map table resource",
+  "additionalProperties": false,
+  "required":[
+    "activation",
+    "map"
+  ],
+  "properties": {
+    "activation": {
+      "$ref": "activation-response-schema.json"
     },
-    "required": [
-        "activation",
-        "map"
-    ],
-    "title": "Map table resource",
-    "type": "object"
+    "map":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "activation": {
@@ -1439,105 +961,22 @@ pre code {
   }
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_map_active__outputid_"><span class="parent">/map/active</span>/{outputId}</a> <span class="methods"><a href="#map_active__outputid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_map_active__outputid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#map_active__outputid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get the active map for the specified output. This resource allows a controller to fetch only the section of the map related to the specified output, without the need to fetch the entire map.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="map_active__outputid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/map/active</span>/{outputId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get the active map for the specified output. This resource allows a controller to fetch only the section of the map related to the specified output, without the need to fetch the entire map.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#map_active__outputid__get_request" data-toggle="tab">Request</a></li><li><a href="#map_active__outputid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="map_active__outputid__get_request"><h3>URI Parameters</h3><ul><li><strong>outputId</strong>: <em><span class="required">required</span>(string - pattern: ^[a-zA-Z0-9\-_]+$)</em></li></ul></div><div class="tab-pane" id="map_active__outputid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
-    "description": "Describes the map for one specific outputId",
-    "properties": {
-        "activation": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "additionalProperties": false,
-            "description": "Parameters concerned with activation of the channel mapping",
-            "properties": {
-                "activation_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating the absolute time the channel mapping will or did actually activate for scheduled activations, or the time activation occurred for immediate activations. For immediate activations this property will be the time the activation actually occurred in the response to the POST request."
-                },
-                "mode": {
-                    "anyOf": [
-                        {
-                            "enum": [
-                                "activate_immediate",
-                                "activate_scheduled_absolute",
-                                "activate_scheduled_relative"
-                            ],
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Mode of activation: immediate (on message receipt), scheduled_absolute (when internal clock &gt;= requested_time), scheduled_relative (when internal clock &gt;= time of message receipt + requested_time), or null (no activation scheduled)."
-                },
-                "requested_time": {
-                    "anyOf": [
-                        {
-                            "pattern": "^[0-9]+:[0-9]+$",
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "String formatted TAI timestamp (&lt;seconds&gt;:&lt;nanoseconds&gt;) indicating time (absolute or relative) for activation requested. For an immediate activation this field will always be null."
-                }
-            },
-            "required": [
-                "mode",
-                "requested_time",
-                "activation_time"
-            ],
-            "type": "object"
-        },
-        "map": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "Describes one map table entry",
-            "patternProperties": {
-                "^[a-zA-Z0-9\\-_]+$": {
-                    "description": "Unique identifiers of the outputs",
-                    "patternProperties": {
-                        "^(0|([1-9][0-9]*))$": {
-                            "description": "Indexes of channels",
-                            "properties": {
-                                "channel_index": {
-                                    "description": "Index of the input channel to be routed. null for unrouted.",
-                                    "type": [
-                                        "integer",
-                                        "null"
-                                    ]
-                                },
-                                "input": {
-                                    "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            },
-                            "required": [
-                                "input",
-                                "channel_index"
-                            ]
-                        }
-                    }
-                }
-            },
-            "title": "Map table entry",
-            "type": "object"
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes the map for one specific outputId",
+  "title": "Map table resource",
+  "additionalProperties": false,
+  "required": [
+    "map"
+  ],
+  "properties": {
+    "activation": {
+      "$ref": "activation-response-schema.json"
     },
-    "required": [
-        "map"
-    ],
-    "title": "Map table resource",
-    "type": "object"
+    "map":{
+      "$ref": "map-tableentry-schema.json"
+    }
+  }
 }
 </code></pre><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "outB":{
@@ -1553,12 +992,12 @@ pre code {
 }
 </code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="inputs" class="panel-title">Inputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_inputs"><span class="parent"></span>/inputs</a> <span class="methods"><a href="#inputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_inputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#inputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all inputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="inputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/inputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all inputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#inputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="inputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "List of inputs/outputs",
+    "description": "List of paths for the inputs or outputs",
     "items": {
         "pattern": "^[a-zA-Z0-9\\-_]+/$",
         "type": "string"
     },
-    "title": "Input/Outputs root resource",
+    "title": "Inputs or Outputs base resource",
     "type": "array",
     "uniqueItems": true
 }
@@ -1702,12 +1141,12 @@ pre code {
     "description": "AES digital audio input 2"
 }</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="outputs" class="panel-title">Outputs</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_outputs"><span class="parent"></span>/outputs</a> <span class="methods"><a href="#outputs_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_outputs" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#outputs_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all outputs available</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="outputs_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/outputs</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all outputs available</p></div><ul class="nav nav-tabs"><li class="active"><a href="#outputs_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="outputs_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "List of inputs/outputs",
+    "description": "List of paths for the inputs or outputs",
     "items": {
         "pattern": "^[a-zA-Z0-9\\-_]+/$",
         "type": "string"
     },
-    "title": "Input/Outputs root resource",
+    "title": "Inputs or Outputs base resource",
     "type": "array",
     "uniqueItems": true
 }
@@ -1837,4 +1276,4 @@ pre code {
     "name": "IP Output",
     "description": "SMPTE 2110-30 IP Output"
 }
-</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#">Base</a></li><li><a href="#io">Input/Output view</a></li><li><a href="#map">Map root</a></li><li><a href="#inputs">Inputs</a></li><li><a href="#outputs">Outputs</a></li></ul></div></div></div></div></body></html>
+</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>Returned when the requested resource does not exist</p></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#">Base</a></li><li><a href="#io">Input/Output view</a></li><li><a href="#map">Map</a></li><li><a href="#inputs">Inputs</a></li><li><a href="#outputs">Outputs</a></li></ul></div></div></div></div></body></html>

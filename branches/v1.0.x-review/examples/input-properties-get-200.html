@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Example output-name-channels-get-200.json
+title: Example input-properties-get-200.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example output-name-channels-get-200.json</h2>
+<h2>Example input-properties-get-200.json</h2>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -25,15 +25,10 @@ title: Example output-name-channels-get-200.json
 </style>
 
 <textarea id="mytextarea">
-[
-  {
-    "label": "Left Channel"
-  },
-  {
-    "label": "Right Channel"
-  }
-]
-</textarea>
+{
+    "name": "AES-2",
+    "description": "AES digital audio input 2"
+}</textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
     mode: {

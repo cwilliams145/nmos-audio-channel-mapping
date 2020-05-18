@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Example input-name-parent-get-200.json
+title: Example map-active-get-200.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Example input-name-parent-get-200.json</h2>
+<h2>Example map-active-get-200.json</h2>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -26,8 +26,57 @@ title: Example input-name-parent-get-200.json
 
 <textarea id="mytextarea">
 {
-  "id": "91762591-9e46-48db-bd08-f8450248f02c",
-  "type": "source"
+  "activation": {
+    "mode": null,
+    "requested_time": null,
+    "activation_time": null
+  },
+  "map":{
+    "outA":{
+      "0":{
+        "input": "input1",
+        "channel_index": 1
+      },
+      "1":{
+        "input": "input1",
+        "channel_index": 2
+      },
+      "2":{
+        "input": "input1",
+        "channel_index": 3
+      },
+      "3":{
+        "input": "input1",
+        "channel_index": 4
+      },
+      "4":{
+        "input": null,
+        "channel_index": null
+      },
+      "5":{
+        "input": null,
+        "channel_index": null
+      },
+      "6":{
+        "input": null,
+        "channel_index": null
+      },
+      "7":{
+        "input": null,
+        "channel_index": null
+      }
+    },
+    "outB":{
+      "0":{
+        "input": "input4",
+        "channel_index": 0
+      },
+      "1":{
+        "input": "input4",
+        "channel_index": 1
+      }
+    }
+  }
 }
 </textarea>
 <script>

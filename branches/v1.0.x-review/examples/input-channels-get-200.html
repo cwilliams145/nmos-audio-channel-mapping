@@ -1,14 +1,11 @@
 ---
 layout: default
-title: Schema map-tableentry-schema.json
+title: Example input-channels-get-200.json
 ---
 
 <html>
 <meta charset="UTF-8">
-<h2>Schema map-tableentry-schema.json</h2>
-<p>
-    <a href="../../schemas/with-refs/map-tableentry-schema.html">Show original (referenced schemas with $ref)</a>
-</p>
+<h2>Example input-channels-get-200.json</h2>
 <div id="json-render">
 <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -28,42 +25,14 @@ title: Schema map-tableentry-schema.json
 </style>
 
 <textarea id="mytextarea">
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Describes one map table entry",
-    "patternProperties": {
-        "^[a-zA-Z0-9\\-_]+$": {
-            "description": "Unique identifiers of the outputs",
-            "patternProperties": {
-                "^(0|([1-9][0-9]*))$": {
-                    "description": "Indexes of channels",
-                    "properties": {
-                        "channel_index": {
-                            "description": "Index of the input channel to be routed. null for unrouted.",
-                            "type": [
-                                "integer",
-                                "null"
-                            ]
-                        },
-                        "input": {
-                            "description": "Unique identifier of the input to which the channel to be routed belongs. null for unrouted.",
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    },
-                    "required": [
-                        "input",
-                        "channel_index"
-                    ]
-                }
-            }
-        }
-    },
-    "title": "Map table entry",
-    "type": "object"
-}
+[
+  {
+    "label": "Left Channel"
+  },
+  {
+    "label": "Right Channel"
+  }
+]
 </textarea>
 <script>
 window.editor_json = CodeMirror.fromTextArea(mytextarea, {
@@ -72,7 +41,7 @@ window.editor_json = CodeMirror.fromTextArea(mytextarea, {
         json: true
     },
     readOnly: true,
-    lineNumbers: false,
+    lineNumbers: true,
     lineWrapping: true,
     extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
     foldGutter: true,
