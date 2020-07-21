@@ -39,35 +39,35 @@ See [here](https://amwa-tv.github.io/nmos) for an overview of NMOS specification
 
 The formal specification is provided in [this GitHub repository](https://github.com/AMWA-TV/nmos-audio-channel-mapping). These pages provide supporting documentation and HTML renders of the APIs (which are specified in RAML and JSON Schema).
 
-The links to documentation, API and examples below and for DOCS and SPEC in the page menu bar are for this release (tag) or branch: **branches/v1.0.x**. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or in the VERSIONS menu.
+The links to documentation, API and examples below and for DOCS and SPEC in the page menu bar are for this release (tag) or branch: **tags/v1.0.1**. Links to [other releases (tags)](tags/) and [other branches](branches/) appear later in the page, or in the VERSIONS menu.
 
-## Documentation for branch v1.0.x
+## Documentation for release/tag v1.0.1
 
-- [Overview](branches/v1.0.x/docs/1.0._Overview.md)
-- [APIs](branches/v1.0.x/docs/2.0._APIs.md)
-  - [Client Side Implementation](branches/v1.0.x/docs/2.1._APIs_-_Client_Side_Implementation.md)
-  - [Server Side Implementation](branches/v1.0.x/docs/2.2._APIs_-_Server_Side_Implementation.md)
-- [Interoperability](branches/v1.0.x/docs/3.0._Interoperability.md)
-  - [NMOS IS-04](branches/v1.0.x/docs/3.1._Interoperability_-_NMOS_IS-04.md)
-- [Behaviour](branches/v1.0.x/docs/4.0._Behaviour.md)
-- [Upgrade Path](branches/v1.0.x/docs/5.0._Upgrade_Path.md)
+- [Overview](tags/v1.0.1/docs/1.0._Overview.md)
+- [APIs](tags/v1.0.1/docs/2.0._APIs.md)
+  - [Client Side Implementation](tags/v1.0.1/docs/2.1._APIs_-_Client_Side_Implementation.md)
+  - [Server Side Implementation](tags/v1.0.1/docs/2.2._APIs_-_Server_Side_Implementation.md)
+- [Interoperability](tags/v1.0.1/docs/3.0._Interoperability.md)
+  - [NMOS IS-04](tags/v1.0.1/docs/3.1._Interoperability_-_NMOS_IS-04.md)
+- [Behaviour](tags/v1.0.1/docs/4.0._Behaviour.md)
+- [Upgrade Path](tags/v1.0.1/docs/5.0._Upgrade_Path.md)
 
-## APIs for branch v1.0.x
+## APIs for release/tag v1.0.1
 
-- [ChannelMappingAPI](branches/v1.0.x/APIs/ChannelMappingAPI.html)
+- [ChannelMappingAPI](tags/v1.0.1/APIs/ChannelMappingAPI.html)
 
-### [JSON Schemas](branches/v1.0.x/APIs/schemas/)
+### [JSON Schemas](tags/v1.0.1/APIs/schemas/)
 
 
-### [Examples](branches/v1.0.x/examples/)
+### [Examples](tags/v1.0.1/examples/)
 
 
 ## Branches
 
 [v1.0.x](branches/v1.0.x/)
 
-[v1.0.x-review](branches/v1.0.x-review/)
-
 ## Releases/Tags
 
 [v1.0](tags/v1.0/)
+
+[v1.0.1](tags/v1.0.1/)

@@ -44,7 +44,7 @@ title: Schema io-response-schema.json
                             "description": "Describes an input's capabilities",
                             "properties": {
                                 "block_size": {
-                                    "min": 1,
+                                    "minimum": 1,
                                     "type": "integer"
                                 },
                                 "reordering": {
@@ -55,7 +55,7 @@ title: Schema io-response-schema.json
                                 "reordering",
                                 "block_size"
                             ],
-                            "title": "Input parameter capability resource",
+                            "title": "Input capabilities resource",
                             "type": "object"
                         },
                         "channels": {
@@ -140,16 +140,26 @@ title: Schema io-response-schema.json
                     "properties": {
                         "caps": {
                             "$schema": "http://json-schema.org/draft-04/schema#",
-                            "description": "List of Inputs that may be routed to a given output",
+                            "description": "Describes an output's capabilities",
                             "properties": {
                                 "routable_inputs": {
-                                    "items": {
-                                        "pattern": "^[a-zA-Z0-9\\-_]+$",
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ]
-                                    }
+                                    "anyOf": [
+                                        {
+                                            "items": {
+                                                "pattern": "^[a-zA-Z0-9\\-_]+$",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "type": "array",
+                                            "uniqueItems": true
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ],
+                                    "description": "List of Inputs that may be routed to this Output, including null if unrouted Output channels are allowed. This property MUST be set to null, if no such restrictions exist."
                                 }
                             },
                             "required": [

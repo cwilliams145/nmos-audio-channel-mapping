@@ -39,8 +39,9 @@
           {% when "BCP-003" %}
             <span class="dropdown">RECS...
                 <div class="dropdown-content">
-                  <p><a href="{{ site.baseurl }}/branches/v1.0-dev/best-practice-secure-comms.html">BCP-003-01 Securing Communications</a></p>
-                  <p><a href="{{ site.baseurl }}/branches/v1.0-dev/best-practice-authorization.html">BCP-003-02 Authorization</a></p>
+                  <p><a href="{{ site.baseurl }}/branches/v1.0-dev/bcp-003-01-securing-communications.html">BCP-003-01 Securing Communications</a></p>
+                  <p><a href="{{ site.baseurl }}/branches/v1.0-dev/bcp-003-02-authorization.html">BCP-003-02 Authorization</a></p>
+                  <p><a href="{{ site.baseurl }}/branches/v1.0-dev/bcp-003-03-certificate-provisioning.html">BCP-003-03 Certificate Provisioning</a></p>
                 </div>
             </span>
 
@@ -77,11 +78,20 @@
               </span>
               <span class="dropdown">VERSIONS...
                 <div class="dropdown-content">
-                  <p><a href="{{ site.baseurl }}/tags">RELEASES</a></p>
+                  <p><a href="{{ site.baseurl }}/tags">RELEASES (TAGS)</a></p>
                   <p><a href="{{ site.baseurl }}/branches">BRANCHES</a></p>
                 </div>
               </span>
-            
+
+            {% elsif site.amwa_id contains "BCP-003-" %}
+              <a href="{{ site.baseurl }}/{{ site.default_tree }}/docs">DOCS</a>
+              <span class="dropdown">VERSIONS...
+                <div class="dropdown-content">
+                  <p><a href="{{ site.baseurl }}/tags">RELEASES (TAGS)</a></p>
+                  <p><a href="{{ site.baseurl }}/branches">BRANCHES</a></p>
+                </div>
+              </span>
+
             {% else %}
               UNKNOWN ID
             {% endif %}
@@ -120,6 +130,9 @@
                   <p><a href="https://amwa-tv.github.io/nmos-id-timing-model">MS-04 Identity & Timing Model</a></p>
                   <p><a href="https://amwa-tv.github.io/nmos-grouping">BCP-002 Grouping</a></p>
                   <p><a href="https://amwa-tv.github.io/nmos-api-security">BCP-003 API Security</a></p>
+                  <p><a href="https://amwa-tv.github.io/nmos-secure-communication">BCP-003-01 Secure Communications</a></p>
+                  <p><a href="https://amwa-tv.github.io/nmos-authorization-practice">BCP-003-02 Authorization Practice</a></p>
+                  <p><a href="https://amwa-tv.github.io/nmos-certificate-provisioning">BCP-003-03 Certificate Provisioning</a></p>
                   <p><a href="https://amwa-tv.github.io/nmos-parameter-registers">Parameter Registers</a></p>
               </div>
               </span>
@@ -130,12 +143,12 @@
               </div>
           </span>
 
-        {% if site.amwa_id contains "IS-" or site.amwa_id contains "MS-" %}
+        {% if site.amwa_id contains "IS-" or site.amwa_id contains "MS-" or site.amwa_id contains "BCP-003-" %}
           <div class="breadcrumbs">
               {% assign dirlist = page.url | split: "/" %}
-              {% assign nlinks = dirlist.size | minus: 2 %}
+              {% assign nlinks = dirlist.size | minus: 2 | at_most: 4 %}
               {% assign link = site.baseurl | append: "/" %}
-              <a href="{{ link }}">HOME</a> ➤ 
+              <a href="{{ link }}">{{ site.amwa_id }}</a> ➤
               {% for i in (1..nlinks) %}
                 {% assign link = link | append: dirlist[i] | append: "/" %}
                 <a href="{{ link }}"> {{ dirlist[i] }} </a> ➤
@@ -149,10 +162,12 @@
         {{ content }}
       </div>
 
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-          Documentation built at {{ site.time | date: '%H:%M:%S %Z on %Y-%m-%d' }}. 
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-center text-gray">
+          Documentation built at {{ site.time | date: '%H:%M:%S %Z on %Y-%m-%d' }}. <br/> 
       {% if site.github.private != true and site.github.license %}
-          This site is open source. {% github_edit_link "Improve this page" %}.
+      (c) AMWA {{ site.time | date: '%Y' }}. 
+      RAML/JSON licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>. 
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a>.
       {% endif %}
       </div>
     </div>

@@ -5,5 +5,3 @@
 ## Branches
 
 [v1.0.x](v1.0.x/)
-
-[v1.0.x-review](v1.0.x-review/)
