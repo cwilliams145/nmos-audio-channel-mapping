@@ -25,5 +25,5 @@
 - [output-caps-get-200](output-caps-get-200.html)
 - [output-channels-get-200](output-channels-get-200.html)
 - [output-properties-get-200](output-properties-get-200.html)
-- [output-sourceid-get-200](output-sourceid-get-200.html)
 - [outputs-base-get-200](outputs-base-get-200.html)
+- [output-sourceid-get-200](output-sourceid-get-200.html)
