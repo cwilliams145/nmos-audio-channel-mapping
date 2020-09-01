@@ -62,11 +62,11 @@ The links to documentation, API and examples below and for DOCS and SPEC in the 
 ### [Examples](tags/v1.0.1/examples/)
 
 
-## Branches
+## Development Branches
 
 [v1.0.x](branches/v1.0.x/)
 
-## Releases/Tags
+##  Published Releases/Tags
 
 [v1.0](tags/v1.0/)
 
