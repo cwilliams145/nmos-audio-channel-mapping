@@ -4,7 +4,7 @@
 
 | Repository | Default Branch | Lint (default) | Render (all) |
 | --- | --- | --- | --- |
-| [nmos-audio-channel-mapping](https://github.com/AMWA-TV/nmos-audio-channel-mapping) | v1.0.x | <a href="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping?branch=v1.0.x"><img src="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=v1.0.x" width="100"/></a> | <a href="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping?branch=gh-pages"><img src="https://travis-ci.com/AMWA-TV/nmos-audio-channel-mapping.svg?branch=gh-pages" width="100"/></a> |
+| [nmos-audio-channel-mapping](https://github.com/AMWA-TV/nmos-audio-channel-mapping) | v1.0.x | [![Lint Status](https://github.com/AMWA-TV/nmos-audio-channel-mapping/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/nmos-audio-channel-mapping/actions?query=workflow%3ALint) | [![Render Status](https://github.com/AMWA-TV/nmos-audio-channel-mapping/workflows/Render/badge.svg)](https://github.com/AMWA-TV/nmos-audio-channel-mapping/actions?query=workflow%3ARender) |
 
 
 ---
